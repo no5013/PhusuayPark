@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+h1 {
+  font-weight: bold;
+
+}
+
+header {
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(../img/header2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.intro-message {
+  position: relative;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.btn-book{
+  color: #fff;
+  background-color: #acd15d;
+  font-weight: bold;
+}
+
+.pnav li a{
+  color: #FFF;
+  font-weight: bold;
+}
+
+.pbrand{
+  color: #000;
+  font-weight: bold;
+}
+
+.info{
+  text-align: center;
+  width: 100%;
+}
+
+.intro-divider {
+  margin-top: 0;
+  width: 100%;
+  border-top: 2px solid #acd15d;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.test {
+  margin-top: 300px
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card-block {
+  clear: both;
+  padding: 1.25rem;
+}
+
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.section-content {
+  padding: 30px 0;
+}
+
+.book-now-message {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.book-now-submessage{
+  position: relative;
+}
+
+.book-now {
+  width: 100%;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(../img/card.jpg) no-repeat center center;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.contact-us {
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  background-color: #3d3d3d;
+  background-size: cover;
+  vertical-align: middle;
+}
