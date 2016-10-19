@@ -18,7 +18,12 @@ header {
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
-  background: url(../img/header2.jpg) no-repeat center center;
+
+  height: 80%;
+  background-image: url("../img/header2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -95,9 +100,12 @@ header {
   width: 100%;
   text-align: center;
   color: #f8f8f8;
-  background: url(../img/card.jpg) no-repeat center center;
+
+  background-image: url("../img/card.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  vertical-align: middle;
 }
 
 .contact-us {
