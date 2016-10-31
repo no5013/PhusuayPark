@@ -14,12 +14,10 @@ h1 {
 }
 
 header {
-  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  padding-bottom: 50px;
+  height: 80%;
+
   text-align: center;
   color: #f8f8f8;
-
-  height: 80%;
   background-image: url("../img/header2.jpg");
   background-attachment: fixed;
   background-position: center;
