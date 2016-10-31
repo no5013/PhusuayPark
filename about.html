@@ -66,31 +66,34 @@
   </section>
 
   <section class='map'>
-        <h2>Location</h2>
-        <p>366 mooู่ 2 BanLao, MuangChaiyapoom, Chaiyapoom, Thailand 36000</p>
+    <h2>Location</h2>
+    <p>366 mooู่ 2 BanLao, MuangChaiyapoom, Chaiyapoom, Thailand 36000</p>
 
-      <div id="map" style="width:100%;min-height:350px"></div>
+    <div id="map" style="width:100%;min-height:350px"></div>
 
-      <script>
-      function myMap() {
-        var mapCanvas = document.getElementById("map");
-        var mapOptions = {
-          center: new google.maps.LatLng(51.5, -0.2),
-          zoom: 10
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
+    <script>
+    function myMap() {
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.2),
+        zoom: 10
       }
-      </script>
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+    </script>
 
-      <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
   </section>
 
   <section class="contact-us">
-    <h2>Contact us</h2>
-    <p>BlahBlahBlahBlahBlahBlahBlahBlah</p>
-    <p>BlahBlahBlahBlahBlahBlahBlahBlah</p>
-    <p>BlahBlahBlahBlahBlahBlahBlahBlah</p>
+    <div class="container">
+      <h2>Contact us</h2>
+      <p><i class="glyphicon glyphicon-earphone"></i> TEL:025527489</p>
+      <p><i class="glyphicon glyphicon-earphone"></i> RESERVATION: 025527435</p>
+      <p><i class="glyphicon glyphicon-envelope"></i> EMAIL: phusuay@gmail.com</p>
+    </div>
   </section>
+
 </body>
 </html>
 
