@@ -14,10 +14,11 @@ h1 {
 }
 
 header {
-  height: 80%;
-
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   text-align: center;
   color: #f8f8f8;
+
+  height: 80%;
   background-image: url("../img/header2.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -50,6 +51,7 @@ header {
 section{
   text-align: center;
   width: 100%;
+  padding: 30px 0;
 }
 
 .intro-divider {
@@ -73,10 +75,6 @@ section{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-}
-
-.section-content {
-  padding: 30px 0;
 }
 
 .book-now-message {
@@ -106,7 +104,7 @@ section.book-now {
 }
 
 section.info{
-
+  padding-bottom: 50px;
 }
 
 section.pic{
@@ -114,11 +112,17 @@ section.pic{
   background-color: #000;
 }
 
-.contact-us {
-  width: 100%;
-  text-align: center;
+section.map{
   color: #FFF;
   background-color: #3d3d3d;
-  background-size: cover;
-  vertical-align: middle;
+}
+
+section.contact-us {
+  color: #FFF;
+  background-color: #000;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
 }
