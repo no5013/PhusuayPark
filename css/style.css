@@ -230,4 +230,49 @@ section.contact-us {
   width:100%;
   height:auto;
   padding: 1rem;
+
+p {
+  word-wrap:break-word;
+}
+
+.room-content{
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.room-content .main-img{
+  width: 80%;
+  margin-bottom: 10px;
+}
+.room-content .main-img{
+  width: 80%;
+  margin-top: 10px;
+}
+
+.room-content .glyphicon-ok-circle{
+  color: #9bff7c;
+}
+
+.room-content .price{
+  padding: 5px 0;
+  background-color: #9bff7c;
+}
+
+.room-description-odd{
+  background-color: #FFFFFF;
+}
+
+.room-description-even{
+  background-color: #f4f4f4;
+}
+
+section#service-price {
+  text-align: center;
+  color: #FFF;
+  background-image: url("../img/header2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
