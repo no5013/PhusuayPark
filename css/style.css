@@ -32,7 +32,7 @@ header {
   padding-bottom: 15%;
 }
 
-.btn-book{
+.btn-custom{
   color: #fff;
   background-color: #acd15d;
   font-weight: bold;
@@ -172,4 +172,19 @@ section.contact-us {
 }
 .floating-label-form-group-with-focus label {
   color: #18BC9C;
+}
+.container-center{
+  text-align: center;
+}
+.container .border-card{
+  text-align: center;
+  width : 80%;
+  background-color: #F4F4F4 ;
+}
+.container .border-card-img{
+  width:100%;
+  height:auto;
+}
+.container .border-card-block{
+  padding: 1.25rem;
 }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' href="css/css/bootstrap.css">
+  <link rel='stylesheet' href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="css/js/bootstrap.js"></script>
+
+  <title>Phusuay Park View</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <a href='index.html' class="navbar-brand pbrand">Phusuay Park View</a>
+      <div class='navbar-right'>
+        <button type="button" class="btn btn-custom navbar-btn">Book Now</button>
+        <p class="navbar-text">TEL: 0922506745</p>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class='container'>
+      <ul class='nav nav-pills navbar-right pnav'>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='index.html'>Rooms</a></li>
+        <li><a href='index.html'>Services</a></li>
+        <li><a href='index.html'>Activities</a></li>
+        <li><a href='about.html'>About</a></li>
+        <li><a href='index.html'>Contact us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class='info section'>
+    <div class='container'>
+      <div >
+        <h2>SERVICE</h2>
+        <hr class="intro-divider">
+        <div class='container container-center'>
+          <div class='row'>
+            <div class="col-xs-4">
+              <div class="border-card">
+                <img class="border-card-img" src="img/card.jpg" alt="Card image cap">
+                <div class="border-card-block">
+                  <h4 class="border-card-title">Card title</h4>
+                  <p class="borer-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-custom">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-4">
+              <div class="border-card">
+                <img class="border-card-img" src="img/card.jpg" alt="Card image cap">
+                <div class="border-card-block">
+                  <h4 class="border-card-title">Card title</h4>
+                  <p class="borer-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-custom">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-4">
+              <div class="border-card">
+                <img class="border-card-img" src="img/card.jpg" alt="Card image cap">
+                <div class="border-card-block">
+                  <h4 class="border-card-title">Card title</h4>
+                  <p class="borer-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-custom">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class='more section'>
+    <div class='container'>
+        <div class='row'>
+          <div class="col-xs-4">
+            <img class="border-card-img" src="img/card.jpg" alt="Card image cap">
+            <div class="border-card-block">
+              <h4 class="border-card-title">Card title</h4>
+              <p class="boeder-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='book-now section'>
+    <div class="container">
+      <p class='book-now-message'>BOOK NOW</p>
+      <p class='book-now-submessage'>Get a special offer up to 70%</p>
+      <button type="button" class="btn btn-default">BOOK NOW</button>
+    </div>
+  </section>
+
+  <section class='map'>
+        <h2>Location</h2>
+        <p>366 mooู่ 2 BanLao, MuangChaiyapoom, Chaiyapoom, Thailand 36000</p>
+
+      <div id="map" style="width:100%;min-height:350px"></div>
+
+      <script>
+      function myMap() {
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {
+          center: new google.maps.LatLng(51.5, -0.2),
+          zoom: 10
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+      </script>
+
+      <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+  </section>
+</body>
+</html>
+</body>
+</html>
