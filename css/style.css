@@ -199,5 +199,15 @@ section.contact-us {
 }
 .icon-img{
   width:50%;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
+}
+.footer{
+  padding: 1rem;
+  padding-left: 2rem;
+  background-color: #2F2F2F;
+  color: #fff;
+}
+.footer p{
+  margin-bottom: 0 ;
+  margin-top: 0.2rem;
 }
