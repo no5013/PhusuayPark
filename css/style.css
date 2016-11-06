@@ -37,8 +37,9 @@ header {
   font-weight: bold;
 }
 .btn-custom:hover{
-  background-color: #86CD89;
-  color: #fff;
+  background-color: #fff;
+  color: #acd15d;
+  border : 2px solid #acd15d;
 }
 
 .pnav li a{
@@ -64,7 +65,7 @@ section{
   margin-top: 0;
   width: 100%;
   border-top: 3px solid #acd15d;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   /*border-bottom: 1px solid rgba(0,0,0,0.2);*/
 }
 
@@ -210,4 +211,23 @@ section.contact-us {
 .footer p{
   margin-bottom: 0 ;
   margin-top: 0.2rem;
+}
+.modal-header-custom {
+  padding: 15px;
+  /*border-bottom: 1px solid #e5e5e5;*/
+}
+.modal-header-custom .modal-title-custom{
+  float: left;
+  padding-left: 1.5rem;
+}
+.modal-body-custom{
+  position: relative;
+  padding-top: 0;
+  padding: 20px;
+  overflow-y: auto;
+}
+.modal-img-custom{
+  width:100%;
+  height:auto;
+  padding: 1rem;
 }
