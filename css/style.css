@@ -32,10 +32,14 @@ header {
   padding-bottom: 15%;
 }
 
-.btn-book{
+.btn-custom{
   color: #fff;
   background-color: #acd15d;
   font-weight: bold;
+}
+.btn-custom:hover{
+  background-color: #86CD89;
+  color: #fff;
 }
 
 .pnav li a{
@@ -53,12 +57,16 @@ section{
   width: 100%;
   padding: 20px 0;
 }
-
+.section{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 .intro-divider {
   margin-top: 0;
   width: 100%;
-  border-top: 2px solid #acd15d;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-top: 3px solid #acd15d;
+  margin-bottom: 5%;
+  /*border-bottom: 1px solid rgba(0,0,0,0.2);*/
 }
 
 .row {
@@ -172,4 +180,34 @@ section.contact-us {
 }
 .floating-label-form-group-with-focus label {
   color: #18BC9C;
+}
+.container-center{
+  text-align: center;
+}
+.container .border-card{
+  margin: 0 auto;
+  text-align: center;
+  width : 80%;
+  background-color: #F4F4F4 ;
+}
+.container .border-card-img{
+  width:100%;
+  height:auto;
+}
+.container .border-card-block{
+  padding: 1.25rem;
+}
+.icon-img{
+  width:50%;
+  padding: 0 2rem 2rem 2rem;
+}
+.footer{
+  padding: 1rem;
+  padding-left: 2rem;
+  background-color: #2F2F2F;
+  color: #fff;
+}
+.footer p{
+  margin-bottom: 0 ;
+  margin-top: 0.2rem;
 }
