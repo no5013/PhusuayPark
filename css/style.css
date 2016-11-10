@@ -223,7 +223,7 @@ section.contact-us {
 .modal-body-custom{
   position: relative;
   padding-top: 0;
-  padding: 20px;
+  padding: 0 20px 30px 20px;
   overflow-y: auto;
 }
 .modal-img-custom{
