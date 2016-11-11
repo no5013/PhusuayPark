@@ -58,8 +58,8 @@ section{
   padding: 20px 0;
 }
 .section{
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .intro-divider {
   margin-top: 0;
@@ -281,4 +281,8 @@ section#service-price {
 
 section#service-price p{
   font-size: 20px;
+}
+
+.message-box{
+  padding: 20px 0;
 }
