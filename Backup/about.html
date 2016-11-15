@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' href="css/css/bootstrap.css">
+  <link rel='stylesheet' href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="css/js/bootstrap.js"></script>
+
+  <title>Phusuay Park View</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <a href='index.html' class="navbar-brand pbrand">Phusuay Park View</a>
+      <div class='navbar-right'>
+        <button type="button" class="btn btn-book navbar-btn">Book Now</button>
+        <p class="navbar-text">TEL: 0922506745</p>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class='container'>
+      <ul class='nav nav-pills navbar-right pnav'>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='index.html'>Rooms</a></li>
+        <li><a href='index.html'>Services</a></li>
+        <li><a href='index.html'>Activities</a></li>
+        <li><a href='index.html'>About</a></li>
+        <li><a href='index.html'>Contact us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class='section'>
+    <div class='container'>
+      <h2>ABOUT</h2>
+      <hr class="intro-divider">
+      <div class="message-box text-center">
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+        <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="img/header2.jpg" class="about-img"></img>
+        </div>
+        <div class="col-xs-4">
+          <img src="img/header2.jpg" class="about-img"></img>
+        </div>
+        <div class="col-xs-4">
+          <img src="img/header2.jpg" class="about-img"></img>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class='map'>
+    <h2>Location</h2>
+    <p>366 mooู่ 2 BanLao, MuangChaiyapoom, Chaiyapoom, Thailand 36000</p>
+
+    <div id="map" style="width:100%;min-height:350px"></div>
+
+    <script>
+    function myMap() {
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.2),
+        zoom: 10
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+  </section>
+
+  <section class="contact-us">
+    <div class="container">
+      <h2>Contact us</h2>
+      <p><i class="glyphicon glyphicon-earphone"></i> TEL:025527489</p>
+      <p><i class="glyphicon glyphicon-earphone"></i> RESERVATION: 025527435</p>
+      <p><i class="glyphicon glyphicon-envelope"></i> EMAIL: phusuay@gmail.com</p>
+    </div>
+  </section>
+
+</body>
+</html>
+
+</body>
+</html>
