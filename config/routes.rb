@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'page_controller/home'
+
+  get 'page_controller/rooms'
+
+  get 'page_controller/services'
+
+  get 'page_controller/activities'
+
+  get 'page_controller/about'
+
+  get 'page_controller/contact_us'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
