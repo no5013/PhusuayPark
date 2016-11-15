@@ -1,0 +1,305 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+
+}
+
+header {
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  text-align: center;
+  color: #f8f8f8;
+
+  height: 80%;
+  background-image: url(<%= asset_path("header2.jpg") %>);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro-message {
+  position: relative;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.btn-custom{
+  color: #fff;
+  background-color: #acd15d;
+  font-weight: bold;
+  border : 2px solid #acd15d;
+}
+.btn-custom:hover{
+  background-color: #fff;
+  color: #acd15d;
+  border : 2px solid #acd15d;
+}
+
+.pnav li a{
+  color: #FFF;
+  font-weight: bold;
+}
+
+.pbrand{
+  color: #000;
+  font-weight: bold;
+}
+
+section{
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+}
+.section{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.intro-divider {
+  margin-top: 0;
+  width: 100%;
+  border-top: 3px solid #acd15d;
+  margin-bottom: 3rem;
+  /*border-bottom: 1px solid rgba(0,0,0,0.2);*/
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card-block {
+  clear: both;
+  padding: 1.25rem;
+}
+
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.book-now-message {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.book-now-submessage{
+  position: relative;
+}
+
+section.book-now {
+  width: 100%;
+  text-align: center;
+  color: #f8f8f8;
+  position: relative;
+  padding-top: 15%;
+  padding-bottom: 15%;
+
+  background-image: url(<%= asset_path("card.jpg") %>);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.book-contact {
+  width: 100%;
+  text-align: center;
+  color: #f8f8f8;
+  position: relative;
+
+  background-image: url(<%= asset_path("card.jpg") %>);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.info{
+  padding-bottom: 50px;
+}
+
+section.pic{
+  height: 20%;
+  background-color: #000;
+}
+
+section.map{
+  color: #FFF;
+  background-color: #3d3d3d;
+}
+
+section.contact-us {
+  color: #FFF;
+  background-color: #000;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+}
+
+.floating-label-form-group {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #eeeeee;
+}
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  z-index: 1;
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 1.5em;
+  background: none;
+  box-shadow: none !important;
+  resize: none;
+}
+.floating-label-form-group label {
+  display: block;
+  z-index: 0;
+  position: relative;
+  top: 2em;
+  margin: 0;
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0;
+  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
+  -moz-transition: top 0.3s ease,opacity 0.3s ease;
+  -ms-transition: top 0.3s ease,opacity 0.3s ease;
+  transition: top 0.3s ease,opacity 0.3s ease;
+}
+.floating-label-form-group:not(:first-child) {
+  padding-left: 14px;
+  border-left: 1px solid #eeeeee;
+}
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1;
+}
+.floating-label-form-group-with-focus label {
+  color: #18BC9C;
+}
+.container-center{
+  text-align: center;
+}
+.container .border-card{
+  margin: 0 auto;
+  text-align: center;
+  width : 80%;
+  background-color: #F4F4F4 ;
+  margin-bottom: 3rem;
+}
+.container .border-card-img{
+  width:100%;
+  height:auto;
+}
+.container .border-card-block{
+  padding: 1.25rem;
+}
+.icon-img{
+  width:50%;
+  padding: 0 2rem 2rem 2rem;
+}
+.footer{
+  padding: 1rem;
+  padding-left: 2rem;
+  background-color: #2F2F2F;
+  color: #fff;
+}
+.footer p{
+  margin-bottom: 0 ;
+  margin-top: 0.2rem;
+}
+.modal-header-custom {
+  padding: 15px;
+  /*border-bottom: 1px solid #e5e5e5;*/
+}
+.modal-header-custom .modal-title-custom{
+  float: left;
+  padding-left: 1.5rem;
+}
+.modal-body-custom{
+  position: relative;
+  padding-top: 0;
+  padding: 0 20px 30px 20px;
+  overflow-y: auto;
+}
+.modal-img-custom{
+  width:100%;
+  height:auto;
+  padding: 1rem;
+}
+
+.half{
+  width:50%;
+  margin: 0 auto;
+}
+
+p {
+  word-wrap:break-word;
+}
+
+.room-content{
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.room-content .main-img{
+  width: 80%;
+  margin-bottom: 10px;
+}
+.room-content .main-img{
+  width: 80%;
+  margin-top: 10px;
+}
+
+.room-content .glyphicon-ok-circle{
+  color: #9bff7c;
+}
+
+.room-content .price{
+  padding: 5px 0;
+  background-color: #9bff7c;
+}
+
+.room-description-odd{
+  background-color: #FFFFFF;
+}
+
+.room-description-even{
+  background-color: #f4f4f4;
+}
+
+section#service-price {
+  padding: 5% 0;
+  text-align: center;
+  color: #FFF;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<%= asset_path("service.jpg") %>);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#service-price p{
+  font-size: 20px;
+}
+
+.message-box{
+  padding: 20px 0;
+}
