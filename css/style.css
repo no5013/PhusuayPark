@@ -35,6 +35,7 @@ header {
   color: #fff;
   background-color: #acd15d;
   font-weight: bold;
+  border : 2px solid #acd15d;
 }
 .btn-custom:hover{
   background-color: #fff;
@@ -110,7 +111,18 @@ section.book-now {
   background-repeat: no-repeat;
   background-size: cover;
 }
+section.book-contact {
+  width: 100%;
+  text-align: center;
+  color: #f8f8f8;
+  position: relative;
 
+  background-image: url("../img/card.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 section.info{
   padding-bottom: 50px;
 }
@@ -230,6 +242,11 @@ section.contact-us {
   width:100%;
   height:auto;
   padding: 1rem;
+}
+
+.half{
+  width:50%;
+  margin: 0 auto;
 }
 
 p {
