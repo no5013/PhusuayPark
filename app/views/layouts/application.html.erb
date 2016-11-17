@@ -9,7 +9,7 @@
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      <a href='index.html' class="navbar-brand pbrand">Phusuay Park View</a>
+      <%= link_to 'Phusuay Park View' , page_controller_home_path, :class => "navbar-brand pbrand"%>
       <div class='navbar-right'>
         <a href="booking.html"><button type="button" class="btn btn-custom navbar-btn">Book Now</button></a>
         <p class="navbar-text">TEL: 0922506745</p>
@@ -20,12 +20,12 @@
   <header>
     <div class='container'>
       <ul class='nav nav-pills navbar-right pnav'>
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='index.html'>Rooms</a></li>
-        <li><a href='service.html'>Services</a></li>
-        <li><a href='activities.html'>Activities</a></li>
-        <li><a href='about.html'>About</a></li>
-        <li><a href='contact-us.html'>Contact us</a></li>
+        <li><%= link_to 'Home' , page_controller_home_path %></li>
+        <li><%= link_to 'Rooms' , page_controller_rooms_path %></li>
+        <li><%= link_to 'Services' , page_controller_services_path %></li>
+        <li><%= link_to 'Activities' , page_controller_activities_path %></li>
+        <li><%= link_to 'About' , page_controller_about_path %></li>
+        <li><%= link_to 'Contact us' , page_controller_contact_us_path %></li>
       </ul>
     </div>
   </header>
