@@ -16,4 +16,7 @@ class PageControllerController < ApplicationController
 
   def contact_us
   end
+
+  def book
+  end
 end
