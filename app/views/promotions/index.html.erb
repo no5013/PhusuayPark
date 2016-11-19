@@ -1,0 +1,6 @@
+<% @promotions.each do |promotion| %>
+	<div class="post_wrapper">
+		<h2 class="title"><%= link_to promotion.title, promotion %></h2>
+		<p class="date"><%= promotion.created_at.strftime("%B %d, %Y") %></p>
+	</div>
+<% end %>

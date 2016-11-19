@@ -1,5 +1,6 @@
 class PromotionsController < ApplicationController
   def index
+    @promotions = Promotion.all.order('created_at DESC')
   end
 
   def new
