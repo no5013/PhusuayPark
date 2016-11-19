@@ -12,6 +12,10 @@ class PromotionsController < ApplicationController
     redirect_to @promotion
   end
 
+  def show
+    @promotion = Promotion.find(params[:id])
+  end
+
   private
     def post_params
       params.require(:promotion).permit(:title, :body)
