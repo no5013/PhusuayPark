@@ -4,6 +4,7 @@
 
 <p class="date">
   Submitted <%= time_ago_in_words(@promotion.created_at) %> Ago
+  <%= link_to 'Edit', edit_promotion_path(@promotion) %>
 </p>
 
 <p class="body">
