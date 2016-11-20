@@ -1,4 +1,6 @@
 class PromotionsController < ApplicationController
+  before_action :authenticate_user!, except: [:index,:show]
+
   def index
     @promotions = Promotion.all.order('created_at DESC')
   end
@@ -37,7 +39,7 @@ class PromotionsController < ApplicationController
 
     redirect_to promotions_path
   end
-  
+
   private
     def post_params
       params.require(:promotion).permit(:title, :body)

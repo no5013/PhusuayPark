@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'page_controller/home'
 
   get 'page_controller/rooms'
