@@ -16,12 +16,13 @@ header {
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   text-align: center;
   color: #f8f8f8;
-  height: 30%;
+  height: 300px;
   background-image: url(<%= asset_path("header2.jpg") %>);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .intro-message {
@@ -304,10 +305,20 @@ section#service-price p{
 .promotion{
   background-color:rgba(0, 0, 0, 0.5);
   height: 80%;
+  position: relative;
 }
 
 @media screen and (min-width: 1024px) {
   header{
-    height: 80%;
+    height: 500px;
   }
+}
+
+.see-more{
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; 
 }
