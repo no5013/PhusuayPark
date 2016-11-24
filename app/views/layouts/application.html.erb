@@ -30,7 +30,7 @@
         <li><%= link_to 'Contact us' , contacts_path %></li>
       </ul>
     </div>
-
+    <% if @promotions.size != 0 then %>
     <div class="col-xs-4 col-xs-offset-1 promotion">
       <h2>Promotions</h2>
       <table style="width:100%">
@@ -43,6 +43,7 @@
       </table>
       <%= link_to 'See more' , promotions_path, :class => "see-more"%>
     </div>
+    <%end%>
   </header>
 
   <%= yield %>
