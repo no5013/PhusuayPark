@@ -16,8 +16,7 @@ header {
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   text-align: center;
   color: #f8f8f8;
-
-  height: 80%;
+  height: 30%;
   background-image: url(<%= asset_path("header2.jpg") %>);
   background-attachment: fixed;
   background-position: center;
@@ -305,4 +304,10 @@ section#service-price p{
 .promotion{
   background-color:rgba(0, 0, 0, 0.5);
   height: 80%;
+}
+
+@media screen and (min-width: 1024px) {
+  header{
+    height: 80%;
+  }
 }
