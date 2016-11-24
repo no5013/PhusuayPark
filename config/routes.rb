@@ -13,6 +13,13 @@ Rails.application.routes.draw do
 
   get 'page_controller/book'
 
+  root to: "page_controller#home"
+  get 'rooms', :to => 'page_controller#rooms'
+  get 'services', :to => 'page_controller#services'
+  get 'activities', :to => 'page_controller#activities'
+  get 'about', :to => 'page_controller#about'
+  get 'contact_us', :to => 'page_controller#contact_us'
+  get 'book', :to => 'page_controller#book'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
