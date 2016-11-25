@@ -22,9 +22,13 @@
   </div>
 </div>
 
-<section class='pic section'>
-  <div class='container'>
-
+<section class='pic'>
+  <div class="owl-carousel">
+    <div> <%= image_tag 'card.jpg' %> </div>
+    <div> <%= image_tag 'card.jpg' %> </div>
+    <div> <%= image_tag 'card.jpg' %> </div>
+    <div> <%= image_tag 'card.jpg' %> </div>
+    <div> <%= image_tag 'card.jpg' %> </div>
   </div>
 </section>
 
@@ -87,4 +91,10 @@
   </script>
 
   <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyB2JUusumTBOvHtrnWzs2i8yWnDTAvda6g "></script>
+  <script>
+
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });
+  </script>
 </section>
