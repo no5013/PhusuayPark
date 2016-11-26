@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'page_controller/home'
 
   get 'page_controller/rooms'
@@ -24,6 +25,8 @@ Rails.application.routes.draw do
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
 
+  match '/promotions',     to: 'promotions#index',             via: 'get'
+  resources "promotions"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

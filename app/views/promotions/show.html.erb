@@ -1,0 +1,13 @@
+<h1 class="title">
+  <%= @promotion.title %>
+</h1>
+
+<p class="date">
+  Submitted <%= time_ago_in_words(@promotion.created_at) %> Ago
+  | <%= link_to 'Edit', edit_promotion_path(@promotion) %>
+  | <%= link_to 'Delete', promotion_path(@promotion), method: :delete, data: {confirm: 'Are you '} %>
+</p>
+
+<p class="body">
+  <%= @promotion.body %>
+</p>

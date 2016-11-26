@@ -54,3 +54,4 @@ gem 'simple_form'
 group :development, :test do
   gem 'foreman'
 end
+gem 'devise'
