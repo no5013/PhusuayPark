@@ -28,9 +28,23 @@
         <li><%= link_to 'Services' , page_controller_services_path %></li>
         <li><%= link_to 'Activities' , page_controller_activities_path %></li>
         <li><%= link_to 'About' , page_controller_about_path %></li>
-        <li><%= link_to 'Contact us' , page_controller_contact_us_path %></li>
+        <li><%= link_to 'Contact us' , contacts_path %></li>
       </ul>
     </div>
+    <% if @promotions.size != 0 then %>
+    <div class="col-xs-4 col-xs-offset-1 promotion">
+      <h2>Promotions</h2>
+      <table style="width:100%">
+        <%@promotions.each do |promotion|%>
+        <tr>
+          <th class="col-md-6 text-center"><%= link_to promotion.title, promotion_path(promotion) %></th>
+          <th class="col-md-6 text-center"><%= promotion.created_at.strftime("%Y-%m-%d") %></th>
+        </tr>
+        <%end%>
+      </table>
+      <%= link_to 'See more' , promotions_path, :class => "see-more"%>
+    </div>
+    <%end%>
   </header>
 
   <%= yield %>
