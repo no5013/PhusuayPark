@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   def set_locale
     I18n.locale = params[:locale] || session[:locale] || I18n.default_locale
     session[:locale] = I18n.locale
+  end
 
   def get_promotions
     @promotions = Promotion.all
