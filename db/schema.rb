@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161120071123) do
+ActiveRecord::Schema.define(version: 20161126174359) do
+
+  create_table "books", force: :cascade do |t|
+    t.string   "checkin_date"
+    t.string   "checkout_date"
+    t.integer  "supreme_num"
+    t.integer  "supreme_double_num"
+    t.integer  "delux_num"
+    t.integer  "delux_double_num"
+    t.integer  "suite_num"
+    t.string   "contact_name"
+    t.string   "contact_email"
+    t.string   "contact_phone"
+    t.text     "contact_message"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "contacts", force: :cascade do |t|
     t.datetime "created_at", null: false

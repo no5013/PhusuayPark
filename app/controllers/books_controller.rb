@@ -28,6 +28,7 @@ class BooksController < ApplicationController
 
     respond_to do |format|
       if @book.save
+        BookMailer.send_booking(@book).deliver
         format.html { redirect_to @book, notice: 'Book was successfully created.' }
         format.json { render :show, status: :created, location: @book }
       else
