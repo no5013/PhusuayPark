@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Books</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Checkin date</th>
+      <th>Checkout date</th>
+      <th>Supreme num</th>
+      <th>Supreme double num</th>
+      <th>Delux num</th>
+      <th>Delux double num</th>
+      <th>Suite num</th>
+      <th>Contact name</th>
+      <th>Contact email</th>
+      <th>Contact phone</th>
+      <th>Contact message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.checkin_date %></td>
+        <td><%= book.checkout_date %></td>
+        <td><%= book.supreme_num %></td>
+        <td><%= book.supreme_double_num %></td>
+        <td><%= book.delux_num %></td>
+        <td><%= book.delux_double_num %></td>
+        <td><%= book.suite_num %></td>
+        <td><%= book.contact_name %></td>
+        <td><%= book.contact_email %></td>
+        <td><%= book.contact_phone %></td>
+        <td><%= book.contact_message %></td>
+        <td><%= link_to 'Show', book %></td>
+        <td><%= link_to 'Edit', edit_book_path(book) %></td>
+        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Book', new_book_path %>
