@@ -34,12 +34,14 @@ header {
 .btn-custom{
   color: #fff;
   background-color: #acd15d;
-  border : 2px solid #acd15d;
+  border: 2px solid #acd15d !important;
 }
+
 .btn-custom:hover{
   background-color: #fff;
   color: #acd15d;
-  border : 2px solid #acd15d;
+  border: 2px solid #acd15d;
+  /*border : 2px solid #acd15d;*/
 }
 
 .pnav li a{
@@ -209,6 +211,16 @@ section.contact-us {
 .container .border-card-block{
   padding: 1.25rem;
 }
+.container .border-card-title{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container .border-card-end{
+  height: auto;
+  width:10%;
+  background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
+}
 .icon-img{
   width:50%;
   padding: 0 2rem 2rem 2rem;
@@ -320,5 +332,5 @@ section#service-price p{
   margin-left: auto;
   margin-right: auto;
   left: 0;
-  right: 0; 
+  right: 0;
 }

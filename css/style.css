@@ -34,7 +34,7 @@ header {
 .btn-custom{
   color: #fff;
   background-color: #acd15d;
-  border : 2px solid #acd15d;
+  border : 2px solid #000;
 }
 
 .btn-custom:hover{
