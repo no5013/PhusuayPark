@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :books
   devise_for :users
   get 'page_controller/home'
 
@@ -13,18 +12,19 @@ Rails.application.routes.draw do
 
   get 'page_controller/contact_us'
 
-  get 'page_controller/book'
+    get 'page_controller/book'
 
   root to: "page_controller#home"
-  get 'rooms', :to => 'page_controller#rooms'
-  get 'services', :to => 'page_controller#services'
-  get 'activities', :to => 'page_controller#activities'
-  get 'about', :to => 'page_controller#about'
-  get 'contact_us', :to => 'page_controller#contact_us'
-  get 'book', :to => 'page_controller#book'
+  get 'rooms', :to => 'page_controller#rooms', as: 'rooms'
+  get 'services', :to => 'page_controller#services', as: 'services'
+  get 'activities', :to => 'page_controller#activities', as: 'activities'
+  get 'about', :to => 'page_controller#about' , as: 'about'
 
-  match '/contacts',     to: 'contacts#new',             via: 'get'
+  match '/contact',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
+
+  match '/book',     to: 'books#new',             via: 'get'
+  resources "books", only: [:new, :create]
 
   match '/promotions',     to: 'promotions#index',             via: 'get'
   resources "promotions"
