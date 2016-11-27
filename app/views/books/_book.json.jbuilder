@@ -1,0 +1,2 @@
+json.extract! book, :id, :checkin_date, :checkout_date, :supreme_num, :supreme_double_num, :delux_num, :delux_double_num, :suite_num, :contact_name, :contact_email, :contact_phone, :contact_message, :created_at, :updated_at
+json.url book_url(book, format: :json)

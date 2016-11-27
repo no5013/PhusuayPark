@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  checkin_date: MyString
+  checkout_date: MyString
+  supreme_num: 1
+  supreme_double_num: 1
+  delux_num: 1
+  delux_double_num: 1
+  suite_num: 1
+  contact_name: MyString
+  contact_email: MyString
+  contact_phone: MyString
+  contact_message: MyText
+
+two:
+  checkin_date: MyString
+  checkout_date: MyString
+  supreme_num: 1
+  supreme_double_num: 1
+  delux_num: 1
+  delux_double_num: 1
+  suite_num: 1
+  contact_name: MyString
+  contact_email: MyString
+  contact_phone: MyString
+  contact_message: MyText

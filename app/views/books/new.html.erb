@@ -1,0 +1,173 @@
+<%= form_for(@book) do |f| %>
+<div class='section'>
+  <div class='container'>
+    <h2>Booking</h2>
+    <hr class="intro-divider">
+    <div class='container'>
+      <p>Select Your Stay Dates</p>
+      <div class="input-group date" >
+        <%= f.text_field :checkin_date, {:class => 'form-control'}%>
+        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+      </div>
+      <div class="input-group date" >
+        <%= f.text_field :checkout_date, {:class => 'form-control'}%>
+        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class='section'>
+  <div class='container'>
+    <p>Select Your Rooms</p>
+    <div class='row'>
+
+      <div class="col-xs-4">
+        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <div class="input-group half">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                <span class="glyphicon glyphicon-minus"></span>
+              </button>
+            </span>
+            <%= f.number_field :supreme_num, {:class => 'form-control input-number input-group'}%>
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                <span class="glyphicon glyphicon-plus"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4">
+        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <div class="input-group half">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                <span class="glyphicon glyphicon-minus"></span>
+              </button>
+            </span>
+            <%= f.number_field :supreme_double_num, {:class => 'form-control input-number input-group'}%>
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                <span class="glyphicon glyphicon-plus"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4">
+        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <div class="input-group half">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                <span class="glyphicon glyphicon-minus"></span>
+              </button>
+            </span>
+            <%= f.number_field :delux_num, {:class => 'form-control input-number input-group'}%>
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                <span class="glyphicon glyphicon-plus"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+
+      <div class="col-xs-4 col-xs-offset-2">
+        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <div class="input-group half">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                <span class="glyphicon glyphicon-minus"></span>
+              </button>
+            </span>
+            <%= f.number_field :delux_double_num, {:class => 'form-control input-number input-group'}%>
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                <span class="glyphicon glyphicon-plus"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4">
+        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <div class="input-group half">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                <span class="glyphicon glyphicon-minus"></span>
+              </button>
+            </span>
+            <%= f.number_field :suite_num, {:class => 'form-control input-number input-group'}%>
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                <span class="glyphicon glyphicon-plus"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='book-contact section'>
+  <div class="container">
+    <p>Your Contact</p>
+    <div class="col-lg-8 col-lg-offset-2">
+      <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+      <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+      <div name="sentMessage" id="contactForm">
+        <div class="row control-group">
+          <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>Name</label>
+            <%= f.text_field :contact_name, :required => true, :placeholder => "Name" ,:class => "form-control" %>
+            <p class="help-block text-danger"></p>
+          </div>
+        </div>
+        <div class="row control-group">
+          <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>Email Address</label>
+            <%= f.text_field :contact_email, :required => true, :placeholder => "Email" ,:class => "form-control" %>
+          </div>
+        </div>
+
+        <div class="row control-group">
+          <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Phone Number</label>
+            <%= f.text_field :contact_phone, :required => true, :placeholder => "Phone Number" ,:class => "form-control" %>
+          </div>
+        </div>
+        <div class="row control-group">
+          <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>Message</label>
+            <%= f.text_area :contact_message, :placeholder => "Other detail", :rows => 5, :class => "form-control"   %>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="form-group col-xs-12">
+              <%= f.submit "BOOK" ,:class =>"btn btn-custom btn-lg" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
