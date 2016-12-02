@@ -20,9 +20,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  welcome: "ภูสวยปาร์ควิว ยินดีต้อนรับ"
   hello: "Hello"
   bye: "Byt"
-
+  #menu
+  home: "Home"
+  room: "Rooms"
+  service: "Services"
+  attraction: "Attraction"
+  about: "About"
+  contactus: "Contact Us"
+  #button
+  seemore: "See more"
+  booknow: "Book now"
+  sendmessage: "send message"
+  book: "book"
   # service
   serviceAndFacilities: "SERVICE"
   servicePage: "SERVICE"

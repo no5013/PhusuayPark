@@ -15,8 +15,8 @@
         <%= link_to "EN", :locale=>'en'%>
         |
         <%= link_to "TH", :locale=>'th'%>
-        <%= link_to 'Book Now' , book_path, :class => "btn btn-custom navbar-btn"%>
-        <p class="navbar-text"><%=t :Tel %></p>
+        <%= link_to  t(:booknow) , book_path, :class => "btn btn-custom navbar-btn"%>
+        <p class="navbar-text"><%=t :tel %></p>
       </div>
     </div>
   </nav>
@@ -24,12 +24,12 @@
   <header>
     <div class='container'>
       <ul class='nav nav-pills navbar-right pnav'>
-        <li><%= link_to 'Home' , root_path %></li>
-        <li><%= link_to 'Rooms' , rooms_path %></li>
-        <li><%= link_to 'Services' , services_path %></li>
-        <li><%= link_to 'Attraction' , activities_path %></li>
-        <li><%= link_to 'About' , about_path %></li>
-        <li><%= link_to 'Contact us' , contact_path %></li>
+        <li><%= link_to t(:home) , root_path %></li>
+        <li><%= link_to t(:room) , rooms_path %></li>
+        <li><%= link_to t(:service) , services_path %></li>
+        <li><%= link_to t(:attraction) , activities_path %></li>
+        <li><%= link_to t(:about) , about_path %></li>
+        <li><%= link_to t(:contactus) , contact_path %></li>
       </ul>
     </div>
     <% if @promotions.size != 0 then %>
@@ -52,7 +52,7 @@
   <div class="footer">
     <p><%=t :locationName %></p>
     <p><%=t :locationAddr %></p>
-    <p><%=t :Tel %></p>
+    <p><%=t :tel %></p>
   </div>
 
 </body>

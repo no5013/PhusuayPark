@@ -1,20 +1,11 @@
 <div class='section'>
   <div class='container'>
-    <h2>ABOUT</h2>
+    <h2><%=t :aboutpage%></h2>
     <hr class="intro-divider">
     <div class="message-box text-center">
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+      <div class="col-xs-offset-2 col-xs-8 container-center text-margin">
+        <%=t :aboutText %>
+      </div>
     </div>
     <div class="row">
       <div class="col-xs-4">
@@ -31,7 +22,7 @@
 </div>
 
 <section class='map'>
-  <h2>Location</h2>
+  <h2><%=t :locationpage%></h2>
   <p><%=t :locationAddr %></p>
 
   <div id="map" style="width:100%;min-height:350px"></div>
@@ -52,9 +43,9 @@
 
 <section class="contact-us">
   <div class="container">
-    <h2>Contact us</h2>
-    <p><i class="glyphicon glyphicon-earphone"></i> TEL:025527489</p>
-    <p><i class="glyphicon glyphicon-earphone"></i> RESERVATION: 025527435</p>
-    <p><i class="glyphicon glyphicon-envelope"></i> EMAIL: phusuay@gmail.com</p>
+    <h2><%=t :contactpage %></h2>
+    <p><i class="glyphicon glyphicon-earphone"></i><%=t :tel %></p>
+    <p><i class="glyphicon glyphicon-earphone"></i><%=t :reservation %></p>
+    <p><i class="glyphicon glyphicon-envelope"></i><%=t :email %></p>
   </div>
 </section>
