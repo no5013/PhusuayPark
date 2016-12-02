@@ -10,9 +10,9 @@ Rails.application.routes.draw do
 
   get 'page_controller/about'
 
-  get 'page_controller/contact_us'
+  # get 'page_controller/contact_us'
 
-    get 'page_controller/book'
+  # get 'page_controller/book'
 
   root to: "page_controller#home"
   get 'home', :to => 'page_controller#home', as: 'home'
@@ -27,8 +27,8 @@ Rails.application.routes.draw do
   match '/book',     to: 'books#new',             via: 'get'
   resources "books", only: [:new, :create]
 
-  match '/promotions',     to: 'promotions#index',             via: 'get'
-  resources "promotions"
+  # match '/promotions',     to: 'promotions#index',             via: 'get'
+  # resources "promotions"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
