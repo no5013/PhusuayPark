@@ -20,10 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "สวัสดี"
-  bye: "ลาก่อย"
+  hello: "Hello"
+  bye: "Byt"
 
   # service
+  serviceAndFacilities: "SERVICE"
+  servicePage: "SERVICE"
   meetingRoomTopic: "Meeting Room"
   diningRoomTopic: "Dining Room"
   coffeeShopTopic: "Coffee Shop"
@@ -32,12 +34,14 @@ en:
   coffeeShop: "ENGร้านกาแฟ นั่งพักผ่อนหรือทำงานสบายๆไปพร้อมๆกับบรรยากาศที่เป็นธรรมชาติ ลิ้มรสกาแฟสดคอฟแมน (อาราบิก้าแท้ 100%) น้ำผลไม้ต่างๆ เครื่องดื่มทั้งร้อนและเย็นนานาๆชนิด ทานควบคู่กับขนมที่เป็นของฝากขึ้นชื่อจากจังหวัดชัยภูมิได้อย่างลงตัว"
 
   #facilities
+  facilitiesPage: "FACILITIES"
   parking: "Parking"
   launder: "Launder"
   interner: "Free wifi"
   roomService: "Room Service"
 
   #attraction
+  attractionPage: "ATTRACTION"
   tatTonNationalParkTopic: "Tat Ton National Park"
   morHinKhaoTopic: "Mor Hin Khao"
   lamPraThaoDamTopic: "Lam PraThao Dam"
@@ -61,3 +65,8 @@ en:
 
   #about
   aboutText: "ENGโรงแรมภูสวยปาร์ควิว ตั้งอยู่ติดถนนชัยภูมิ-ชุมแพ ใกล้สถานที่ท่องเที่ยวที่น่าสนใจของจังหวัดชัยภูมิมากมาย อีกทั้งยังเป็นเส้นทางหลักในการเดินทางไปยังจังหวัดต่างๆในภาคอีสานห้องพักสไตล์บลูติคโฮเต็ล 6 เฉดสี มีให้เลือกหลายระดับ เพรียบพร้อมไปด้วยสิ่งอำนวยความสะดวกมากมาย อาหารอร่อย เดินทางสะดวก รายล้อมไปด้วยธรรมชาติและบรรยากาศชานเมือง เหมาะสำหรับ​การพักผ่อน ดื่มด่ำกับธรรมชาติอันร่มรื่น หลุดพ้นจากความแออัดภายในตัวเมือง ตอบโจทย์สำหรับทุกการพักผ่อนจนคุณต้องประทับใจ"
+
+  #location
+  locationName: "Phusuay Park View"
+  locationAddr: "366 Moo2,ban-lao,chaiyaboom,thailand,36000"
+  Tel: "Tel : 044-854-111"

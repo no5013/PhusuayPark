@@ -12,10 +12,11 @@
     <div class="container">
       <%= link_to 'Phusuay Park View' , root_path, :class => "navbar-brand pbrand"%>
       <div class='navbar-right'>
-        <%= link_to "English", :locale=>'en'%>
-        <%= link_to "Thai", :locale=>'th'%>
+        <%= link_to "EN", :locale=>'en'%>
+        |
+        <%= link_to "TH", :locale=>'th'%>
         <%= link_to 'Book Now' , book_path, :class => "btn btn-custom navbar-btn"%>
-        <p class="navbar-text">TEL: 0922506745</p>
+        <p class="navbar-text"><%=t :Tel %></p>
       </div>
     </div>
   </nav>
@@ -26,7 +27,7 @@
         <li><%= link_to 'Home' , root_path %></li>
         <li><%= link_to 'Rooms' , rooms_path %></li>
         <li><%= link_to 'Services' , services_path %></li>
-        <li><%= link_to 'Activities' , activities_path %></li>
+        <li><%= link_to 'Attraction' , activities_path %></li>
         <li><%= link_to 'About' , about_path %></li>
         <li><%= link_to 'Contact us' , contact_path %></li>
       </ul>
@@ -49,9 +50,9 @@
 
   <%= yield %>
   <div class="footer">
-    <p>Phusuay Park View</p>
-    <p>366 Moo2,ban-lao,chaiyaboom,thailand,36000</p>
-    <p>Tel : 029999999 </p>
+    <p><%=t :locationName %></p>
+    <p><%=t :locationAddr %></p>
+    <p><%=t :Tel %></p>
   </div>
 
 </body>

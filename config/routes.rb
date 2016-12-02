@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     get 'page_controller/book'
 
   root to: "page_controller#home"
+  get 'home', :to => 'page_controller#home', as: 'home'
   get 'rooms', :to => 'page_controller#rooms', as: 'rooms'
   get 'services', :to => 'page_controller#services', as: 'services'
   get 'activities', :to => 'page_controller#activities', as: 'activities'
