@@ -31,13 +31,13 @@
           <h4 class="card-title">Card title</h4>
           <div class="input-group half">
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+              <button type="button" id="sub1" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]">
                 <span class="glyphicon glyphicon-minus"></span>
               </button>
             </span>
-            <%= f.number_field :supreme_num, {:class => 'form-control input-number input-group'}%>
+            <%= f.number_field :supreme_num, {:class => 'form-control input-number input-group text-center',id:"room1", readonly: true, value:0}%>
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+              <button type="button" id="add1" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
                 <span class="glyphicon glyphicon-plus"></span>
               </button>
             </span>
@@ -51,13 +51,13 @@
           <h4 class="card-title">Card title</h4>
           <div class="input-group half">
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+              <button type="button" id="sub2" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
                 <span class="glyphicon glyphicon-minus"></span>
               </button>
             </span>
-            <%= f.number_field :supreme_double_num, {:class => 'form-control input-number input-group'}%>
+            <%= f.number_field :supreme_double_num, {:class => 'form-control input-number input-group',id:"room2", readonly: true, value:0}%>
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+              <button type="button" id="add2" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
                 <span class="glyphicon glyphicon-plus"></span>
               </button>
             </span>
@@ -71,13 +71,13 @@
           <h4 class="card-title">Card title</h4>
           <div class="input-group half">
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+              <button type="button" id="sub3" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
                 <span class="glyphicon glyphicon-minus"></span>
               </button>
             </span>
-            <%= f.number_field :delux_num, {:class => 'form-control input-number input-group'}%>
+            <%= f.number_field :delux_num, {:class => 'form-control input-number input-group',id:"room3", readonly: true, value:0}%>
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+              <button type="button" id="add3" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
                 <span class="glyphicon glyphicon-plus"></span>
               </button>
             </span>
@@ -93,13 +93,13 @@
           <h4 class="card-title">Card title</h4>
           <div class="input-group half">
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+              <button type="button" id="sub4" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
                 <span class="glyphicon glyphicon-minus"></span>
               </button>
             </span>
-            <%= f.number_field :delux_double_num, {:class => 'form-control input-number input-group'}%>
+            <%= f.number_field :delux_double_num, {:class => 'form-control input-number input-group',id:"room4", readonly: true, value:0}%>
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+              <button type="button" id="add4" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
                 <span class="glyphicon glyphicon-plus"></span>
               </button>
             </span>
@@ -113,13 +113,13 @@
           <h4 class="card-title">Card title</h4>
           <div class="input-group half">
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+              <button type="button" id="sub5" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
                 <span class="glyphicon glyphicon-minus"></span>
               </button>
             </span>
-            <%= f.number_field :suite_num, {:class => 'form-control input-number input-group'}%>
+            <%= f.number_field :suite_num, {:class => 'form-control input-number input-group', id:"room5", readonly: true, value:0}%>
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+              <button type="button" id="add5" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
                 <span class="glyphicon glyphicon-plus"></span>
               </button>
             </span>
@@ -186,6 +186,92 @@
     $( "#checkOutBtn" ).click(function(){
       $( "#checkOutpicker" ).datepicker('show')
     });
+
+
+    $('#add1').click(function() {
+        curVal = $('#room1').val()
+        nextVal = parseInt(curVal)+1
+        if(checkRoomVal(nextVal)){
+            $('#room1').val(nextVal)
+        }
+    });
+
+    $('#sub1').click(function() {
+        curVal = $('#room1').val()
+        nextVal = parseInt(curVal)-1
+        if(checkRoomVal(nextVal)){
+            $('#room1').val(nextVal)
+        }
+    });
+
+    $('#add2').click(function() {
+        curVal = $('#room2').val()
+        nextVal = parseInt(curVal)+1
+        if(checkRoomVal(nextVal)){
+            $('#room2').val(nextVal)
+        }
+    });
+
+    $('#sub2').click(function() {
+        curVal = $('#room2').val()
+        nextVal = parseInt(curVal)-1
+        if(checkRoomVal(nextVal)){
+            $('#room2').val(nextVal)
+        }
+    });
+
+    $('#add3').click(function() {
+        curVal = $('#room3').val()
+        nextVal = parseInt(curVal)+1
+        if(checkRoomVal(nextVal)){
+            $('#room3').val(nextVal)
+        }
+    });
+
+    $('#sub3').click(function() {
+        curVal = $('#room3').val()
+        nextVal = parseInt(curVal)-1
+        if(checkRoomVal(nextVal)){
+            $('#room3').val(nextVal)
+        }
+    });
+
+    $('#add4').click(function() {
+        curVal = $('#room4').val()
+        nextVal = parseInt(curVal)+1
+        if(checkRoomVal(nextVal)){
+            $('#room4').val(nextVal)
+        }
+    });
+
+    $('#sub4').click(function() {
+        curVal = $('#room4').val()
+        nextVal = parseInt(curVal)-1
+        if(checkRoomVal(nextVal)){
+            $('#room4').val(nextVal)
+        }
+    });
+    $('#add5').click(function() {
+        curVal = $('#room5').val()
+        nextVal = parseInt(curVal)+1
+        if(checkRoomVal(nextVal)){
+            $('#room5').val(nextVal)
+        }
+    });
+
+    $('#sub5').click(function() {
+        curVal = $('#room5').val()
+        nextVal = parseInt(curVal)-1
+        if(checkRoomVal(nextVal)){
+            $('#room5').val(nextVal)
+        }
+    });
+
+    function checkRoomVal(val){
+      if(val<0||val>10)
+        return false;
+      return true;
+    }
 
 
   } );
