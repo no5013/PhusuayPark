@@ -20,8 +20,7 @@
 
       <div class="row control-group">
         <div class="form-group col-xs-12 floating-label-form-group controls">
-          <label><%=t :phonecus %></label>
-          <input type="tel" class="form-control" placeholder: "phone" id="phone" required data-validation-required-message="Please enter your phone number.">
+          <%= f.input :phone, :required => true, placeholder:"Phone", :input_html => {:class => "form-control" } %>
         </div>
       </div>
 

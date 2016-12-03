@@ -26,18 +26,28 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params)
 
-    respond_to do |format|
-      if @book.save
-        BookMailer.send_booking(@book).deliver
-        format.html { redirect_to @book, notice: 'Book was successfully created.' }
-        format.json { render :show, status: :created, location: @book }
+    # respond_to do |format|
+    #   if @book.save
+    #     BookMailer.send_booking(@book).deliver
+    #     format.html { redirect_to @book, notice: 'Book was successfully created.' }
+    #     format.json { render :show, status: :created, location: @book }
+    #   else
+    #     format.html { render :new }
+    #     format.json { render json: @book.errors, status: :unprocessable_entity }
+    #   end
+    # end
+
+    if @book.save
+      if BookMailer.send_booking(@book).deliver
+        flash[:notice] = 'Thank you for your booking. We will contact you soon!'
       else
-        format.html { render :new }
-        format.json { render json: @book.errors, status: :unprocessable_entity }
+        flash[:error] = 'Cannot send message.'
+        render :new
       end
+    else
+      render :new
     end
   end
-
   # PATCH/PUT /books/1
   # PATCH/PUT /books/1.json
   def update
@@ -63,13 +73,13 @@ class BooksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_book
-      @book = Book.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_book
+    @book = Book.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def book_params
-      params.require(:book).permit(:checkin_date, :checkout_date, :supreme_num, :supreme_double_num, :delux_num, :delux_double_num, :suite_num, :contact_name, :contact_email, :contact_phone, :contact_message)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def book_params
+    params.require(:book).permit(:checkin_date, :checkout_date, :supreme_num, :supreme_double_num, :delux_num, :delux_double_num, :suite_num, :contact_name, :contact_email, :contact_phone, :contact_message)
+  end
 end
