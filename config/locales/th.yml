@@ -17,16 +17,21 @@ th:
 
   #room
   roompage: "ห้องพัก"
-  supremeone: "Supreme เดี่ยว"
-  supremetwo: "Supreme คู่"
-  deluxone: "Delux เดี่ยว"
-  deluxtwo: "Delux คู่"
-  sweet: "Sweet"
+  supremeone: "ห้อง Supreme เดี่ยว"
+  supremetwo: "ห้อง Supreme คู่"
+  deluxone: "ห้อง Delux เดี่ยว"
+  deluxtwo: "ห้อง Delux คู่"
+  sweet: "ห้อง Sweet"
   air: "แอร์"
   hotwater: "น้ำอุ่น"
   tv: "โทรทัศน์"
   refrigerator: "ตู้เย็น"
   breakfast: "อาหารเช้า"
+  reserveroom: "ห้องรับรอง"
+  baht: "บาท"
+  pernight: "ต่อคืน"
+  numperson: "จำนวนคน"
+
   # service
   serviceAndFacilities: "บริการต่างๆ"
   servicePage: "บริการ"
