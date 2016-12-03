@@ -7,18 +7,18 @@
     <hr class="intro-divider">
     <div class='container'>
 
-      <% if flash[:notice] %>
+      <% if flash[:error] %>
             <div class="alert alert-danger"><%= flash[:error] %></div>
       <% end %>
 
       <p class="text-center">Select Check in Dates</p>
       <div class="input-group date col-md-offset-4 col-md-4 col-xs-12" >
-        <%= f.text_field :checkin_date, {:class => 'form-control',:id => 'checkInpicker'}%>
+        <%= f.text_field :checkin_date, {:class => 'form-control',:id => 'checkInpicker', :required => true}%>
         <span class="input-group-addon span-btn" id="checkInBtn"><i class="glyphicon glyphicon-calendar"></i></span>
       </div>
       <p class="text-center">Select Check out Dates</p>
       <div class="input-group date col-md-offset-4 col-md-4 col-xs-12" >
-        <%= f.text_field :checkout_date, {:class => 'form-control', :id => 'checkOutpicker'}%>
+        <%= f.text_field :checkout_date, {:class => 'form-control', :id => 'checkOutpicker', :required => true}%>
         <span class="input-group-addon span-btn" id="checkOutBtn"><i class="glyphicon glyphicon-calendar" id="checkOutBtn"></i></span>
       </div>
     </div>
