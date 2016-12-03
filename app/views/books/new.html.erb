@@ -8,7 +8,7 @@
     <div class='container'>
 
       <% if flash[:error] %>
-            <div class="alert alert-danger"><%= flash[:error] %></div>
+      <div class="alert alert-danger"><%= flash[:error] %></div>
       <% end %>
 
       <p class="text-center">Select Check in Dates</p>
@@ -31,9 +31,9 @@
     <div class='row'>
 
       <div class="col-xs-4">
-        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <%= image_tag 'phusuay/supreme1/pic1.jpg', :class => "room-select-img" %>
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
+          <h4 class="card-title"><%=t :supremeone%></h4>
           <div class="input-group half">
             <span class="input-group-btn">
               <button type="button" id="sub1" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]">
@@ -51,9 +51,9 @@
       </div>
 
       <div class="col-xs-4">
-        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <%= image_tag 'phusuay/supreme2/pic1.jpg', :class => "room-select-img" %>
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
+          <h4 class="card-title"><%=t :supremetwo%></h4>
           <div class="input-group half">
             <span class="input-group-btn">
               <button type="button" id="sub2" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
@@ -71,9 +71,9 @@
       </div>
 
       <div class="col-xs-4">
-        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <%= image_tag 'phusuay/delux1/pic1.jpg', :class => "room-select-img" %>
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
+          <h4 class="card-title"><%=t :deluxone%></h4>
           <div class="input-group half">
             <span class="input-group-btn">
               <button type="button" id="sub3" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
@@ -93,9 +93,9 @@
     <div class='row'>
 
       <div class="col-xs-4 col-xs-offset-2">
-        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <%= image_tag 'phusuay/delux2/pic1.jpg', :class => "room-select-img" %>
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
+          <h4 class="card-title"><%=t :deluxtwo%></h4>
           <div class="input-group half">
             <span class="input-group-btn">
               <button type="button" id="sub4" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
@@ -113,9 +113,9 @@
       </div>
 
       <div class="col-xs-4">
-        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <%= image_tag 'phusuay/sweet/pic1.jpg', :class => "room-select-img" %>
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
+          <h4 class="card-title"><%=t :sweet%></h4>
           <div class="input-group half">
             <span class="input-group-btn">
               <button type="button" id="sub5" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
@@ -181,7 +181,7 @@
 <% end %>
 
 <script>
-$( function() {
+$(document).ready(function(){
   $( "#checkInpicker" ).datepicker({dateFormat: 'dd/M/yy'});
   $( "#checkOutpicker" ).datepicker({dateFormat: 'dd/M/yy'});
 
