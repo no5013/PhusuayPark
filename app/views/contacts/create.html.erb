@@ -1,8 +1,15 @@
-<div>
-  <% flash.each do |key, value| %>
-    <div>
-      <a href="#" data-dismiss="alert">×</a>
-        <%= value %>
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="text-left">CONTACT US</h2>
+    <hr class="intro-divider">
+    <div class="container">
+      <div>
+        <% flash.each do |key, value| %>
+        <div>
+          <h2 class="text-center" style="margin-top:100px; margin-bottom:100px;"><%= value %></h2>
+        </div>
+        <% end %>
+      </div>
     </div>
-  <% end %>
-</div>
+  </div>
+</section>

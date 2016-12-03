@@ -6,6 +6,11 @@
     <h2>Booking</h2>
     <hr class="intro-divider">
     <div class='container'>
+
+      <% if flash[:notice] %>
+            <div class="alert alert-danger"><%= flash[:error] %></div>
+      <% end %>
+
       <p class="text-center">Select Check in Dates</p>
       <div class="input-group date col-md-offset-4 col-md-4 col-xs-12" >
         <%= f.text_field :checkin_date, {:class => 'form-control',:id => 'checkInpicker'}%>
@@ -176,105 +181,105 @@
 <% end %>
 
 <script>
-  $( function() {
-    $( "#checkInpicker" ).datepicker({dateFormat: 'dd/M/yy'});
-    $( "#checkOutpicker" ).datepicker({dateFormat: 'dd/M/yy'});
+$( function() {
+  $( "#checkInpicker" ).datepicker({dateFormat: 'dd/M/yy'});
+  $( "#checkOutpicker" ).datepicker({dateFormat: 'dd/M/yy'});
 
-    $( "#checkInBtn" ).click(function(){
-      $( "#checkInpicker" ).datepicker('show')
-    });
-    $( "#checkOutBtn" ).click(function(){
-      $( "#checkOutpicker" ).datepicker('show')
-    });
+  $( "#checkInBtn" ).click(function(){
+    $( "#checkInpicker" ).datepicker('show')
+  });
+  $( "#checkOutBtn" ).click(function(){
+    $( "#checkOutpicker" ).datepicker('show')
+  });
 
 
-    $('#add1').click(function() {
-        curVal = $('#room1').val()
-        nextVal = parseInt(curVal)+1
-        if(checkRoomVal(nextVal)){
-            $('#room1').val(nextVal)
-        }
-    });
-
-    $('#sub1').click(function() {
-        curVal = $('#room1').val()
-        nextVal = parseInt(curVal)-1
-        if(checkRoomVal(nextVal)){
-            $('#room1').val(nextVal)
-        }
-    });
-
-    $('#add2').click(function() {
-        curVal = $('#room2').val()
-        nextVal = parseInt(curVal)+1
-        if(checkRoomVal(nextVal)){
-            $('#room2').val(nextVal)
-        }
-    });
-
-    $('#sub2').click(function() {
-        curVal = $('#room2').val()
-        nextVal = parseInt(curVal)-1
-        if(checkRoomVal(nextVal)){
-            $('#room2').val(nextVal)
-        }
-    });
-
-    $('#add3').click(function() {
-        curVal = $('#room3').val()
-        nextVal = parseInt(curVal)+1
-        if(checkRoomVal(nextVal)){
-            $('#room3').val(nextVal)
-        }
-    });
-
-    $('#sub3').click(function() {
-        curVal = $('#room3').val()
-        nextVal = parseInt(curVal)-1
-        if(checkRoomVal(nextVal)){
-            $('#room3').val(nextVal)
-        }
-    });
-
-    $('#add4').click(function() {
-        curVal = $('#room4').val()
-        nextVal = parseInt(curVal)+1
-        if(checkRoomVal(nextVal)){
-            $('#room4').val(nextVal)
-        }
-    });
-
-    $('#sub4').click(function() {
-        curVal = $('#room4').val()
-        nextVal = parseInt(curVal)-1
-        if(checkRoomVal(nextVal)){
-            $('#room4').val(nextVal)
-        }
-    });
-    $('#add5').click(function() {
-        curVal = $('#room5').val()
-        nextVal = parseInt(curVal)+1
-        if(checkRoomVal(nextVal)){
-            $('#room5').val(nextVal)
-        }
-    });
-
-    $('#sub5').click(function() {
-        curVal = $('#room5').val()
-        nextVal = parseInt(curVal)-1
-        if(checkRoomVal(nextVal)){
-            $('#room5').val(nextVal)
-        }
-    });
-
-    function checkRoomVal(val){
-      if(val<0||val>10)
-        return false;
-      return true;
+  $('#add1').click(function() {
+    curVal = $('#room1').val()
+    nextVal = parseInt(curVal)+1
+    if(checkRoomVal(nextVal)){
+      $('#room1').val(nextVal)
     }
+  });
+
+  $('#sub1').click(function() {
+    curVal = $('#room1').val()
+    nextVal = parseInt(curVal)-1
+    if(checkRoomVal(nextVal)){
+      $('#room1').val(nextVal)
+    }
+  });
+
+  $('#add2').click(function() {
+    curVal = $('#room2').val()
+    nextVal = parseInt(curVal)+1
+    if(checkRoomVal(nextVal)){
+      $('#room2').val(nextVal)
+    }
+  });
+
+  $('#sub2').click(function() {
+    curVal = $('#room2').val()
+    nextVal = parseInt(curVal)-1
+    if(checkRoomVal(nextVal)){
+      $('#room2').val(nextVal)
+    }
+  });
+
+  $('#add3').click(function() {
+    curVal = $('#room3').val()
+    nextVal = parseInt(curVal)+1
+    if(checkRoomVal(nextVal)){
+      $('#room3').val(nextVal)
+    }
+  });
+
+  $('#sub3').click(function() {
+    curVal = $('#room3').val()
+    nextVal = parseInt(curVal)-1
+    if(checkRoomVal(nextVal)){
+      $('#room3').val(nextVal)
+    }
+  });
+
+  $('#add4').click(function() {
+    curVal = $('#room4').val()
+    nextVal = parseInt(curVal)+1
+    if(checkRoomVal(nextVal)){
+      $('#room4').val(nextVal)
+    }
+  });
+
+  $('#sub4').click(function() {
+    curVal = $('#room4').val()
+    nextVal = parseInt(curVal)-1
+    if(checkRoomVal(nextVal)){
+      $('#room4').val(nextVal)
+    }
+  });
+  $('#add5').click(function() {
+    curVal = $('#room5').val()
+    nextVal = parseInt(curVal)+1
+    if(checkRoomVal(nextVal)){
+      $('#room5').val(nextVal)
+    }
+  });
+
+  $('#sub5').click(function() {
+    curVal = $('#room5').val()
+    nextVal = parseInt(curVal)-1
+    if(checkRoomVal(nextVal)){
+      $('#room5').val(nextVal)
+    }
+  });
+
+  function checkRoomVal(val){
+    if(val<0||val>10)
+    return false;
+    return true;
+  }
 
 
-  } );
+} );
 
 
 
