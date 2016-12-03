@@ -5,19 +5,10 @@
     </div>
     <hr class="intro-divider">
     <div class='message-box text-center'>
-      <h1><%=t :hello %></h1>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
-      <p>WELCOMEWELCOMEWELLCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOMEWELCOME</p>
+      <h3>ท่ามกลางธรรมชาติอันรื่นรมย์ กลิ่นไอความอบอุ่น</h3>
+      <h3>ใกล้สถานที่ท่องเที่ยวที่น่าสนใจของจังหวัดชัยภูมิ</h3>
+      <h3>พร้อมสิ่งอำนวยความสะดวกครบครัน เลือกสรรไว้สำหรับคุณ"ที่นี่"</h3>
+      <h3>พักกาย... สบายใจ... ที่ภูสวยปาร์ควิว</h3>
     </div>
   </div>
 </div>
@@ -32,7 +23,7 @@
   </div>
 </section>
 
-<section class='more section'>
+<section class='more'>
   <div class='container'>
     <div class='row'>
       <div class="col-xs-4">
@@ -94,7 +85,29 @@
   <script>
 
   $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
+    $(".owl-carousel").owlCarousel({
+      loop:true,
+      margin:10,
+      responsiveClass:true,
+      responsive:{
+        0:{
+          items:1,
+          nav:true
+        },
+        600:{
+          items:3,
+          nav:false
+        },
+        1000:{
+          items:4,
+          nav:false
+        }
+      },
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true
+    });
+
   });
   </script>
 </section>
