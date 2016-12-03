@@ -16,6 +16,7 @@ th:
   book: "จอง"
 
   #room
+  roompage: "ห้องพัก"
   supremeone: "Supreme เดี่ยว"
   supremetwo: "Supreme คู่"
   deluxone: "Delux เดี่ยว"
