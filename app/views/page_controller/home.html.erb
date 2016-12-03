@@ -1,7 +1,7 @@
 <div class='info section'>
   <div class='container'>
     <div class='section-subject text-center'>
-      <h2>Welcome to Phusuay Park View</h2>
+      <h2><%=t :welcome %></h2>
     </div>
     <hr class="intro-divider">
     <div class='message-box text-center'>
@@ -24,11 +24,11 @@
 
 <section class='pic'>
   <div class="owl-carousel">
-    <div> <%= image_tag 'card.jpg' %> </div>
-    <div> <%= image_tag 'card.jpg' %> </div>
-    <div> <%= image_tag 'card.jpg' %> </div>
-    <div> <%= image_tag 'card.jpg' %> </div>
-    <div> <%= image_tag 'card.jpg' %> </div>
+    <div> <%= image_tag 'phusuay/pic1.jpg' %> </div>
+    <div> <%= image_tag 'phusuay/pic6.jpg' %> </div>
+    <div> <%= image_tag 'phusuay/pic10.jpg' %> </div>
+    <div> <%= image_tag 'phusuay/pic9.jpg' %> </div>
+    <div> <%= image_tag 'phusuay/pic13.jpg' %> </div>
   </div>
 </section>
 
@@ -36,29 +36,29 @@
   <div class='container'>
     <div class='row'>
       <div class="col-xs-4">
-        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <%= image_tag 'phusuay/homepic1.jpg', :class => "card-img-top" %>
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
+          <h4 class="card-title"><%=t :roompage %></h4>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">See more</a>
+          <a href="#" class="btn btn-primary"><%=t :seemore %></a>
         </div>
       </div>
 
       <div class="col-xs-4">
-        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <%= image_tag 'phusuay/homepic2.jpg', :class => "card-img-top" %>
         <div class="card-block">
           <h4 class="card-title"><%=t :serviceAndFacilities %></h4>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">See more</a>
+          <a href="#" class="btn btn-primary"><%=t :seemore %></a>
         </div>
       </div>
 
       <div class="col-xs-4">
-        <%= image_tag 'card.jpg', :class => "card-img-top" %>
+        <%= image_tag 'phusuay/homepic3.jpg', :class => "card-img-top" %>
         <div class="card-block">
           <h4 class="card-title"><%=t :attractionPage%></h4>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">See more</a>
+          <a href="#" class="btn btn-primary"><%=t :seemore %></a>
         </div>
       </div>
     </div>
@@ -69,12 +69,12 @@
   <div class="container">
     <p class='book-now-message'>BOOK NOW</p>
     <p class='book-now-submessage'>Get a special offer up to 70%</p>
-    <button type="button" class="btn btn-default">BOOK NOW</button>
+    <button type="button" class="btn btn-default"><%=t :booknow %></button>
   </div>
 </section>
 
 <section class='map'>
-  <h2>Location</h2>
+  <h2><%=t :locationpage %></h2>
   <p><%=t :locationAddr%></p>
 
   <div id="map" style="width:100%;min-height:350px"></div>

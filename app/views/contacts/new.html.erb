@@ -1,6 +1,6 @@
 <section id="contact" class="section">
   <div class="container">
-    <h2 class="text-left">CONTACT US</h2>
+    <h2 class="text-left"><%=t :contactpage %></h2>
     <hr class="intro-divider">
     <div class="col-lg-8 col-lg-offset-2">
       <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -8,26 +8,26 @@
       <%= simple_form_for @contact, :html => {:class => 'form-horizontal', :id => 'contactForm' } do |f| %>
       <div class="row control-group">
         <div class="form-group col-xs-12 floating-label-form-group controls">
-          <%= f.input :name, :required => true, placeholder:"Name", :input_html => {:class => "form-control" } %>
+          <%= f.input :name, :required => true, placeholder:t(:namecus), :input_html => {:class => "form-control" } %>
           <p class="help-block text-danger"></p>
         </div>
       </div>
       <div class="row control-group">
         <div class="form-group col-xs-12 floating-label-form-group controls">
-          <%= f.input :email, :required => true, placeholder:"Email", :input_html => {:class => "form-control" } %>
+          <%= f.input :email, :required => true, placeholder:t(:emailcus), :input_html => {:class => "form-control" } %>
         </div>
       </div>
 
       <div class="row control-group">
         <div class="form-group col-xs-12 floating-label-form-group controls">
-          <label>Phone Number</label>
-          <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+          <label><%=t :phonecus %></label>
+          <input type="tel" class="form-control" placeholder: "phone" id="phone" required data-validation-required-message="Please enter your phone number.">
         </div>
       </div>
 
       <div class="row control-group">
         <div class="form-group col-xs-12 floating-label-form-group controls">
-          <%= f.input :message, :as => :text, :required => true, placeholder:"Message", :input_html => { :class => "form-control" }  %>
+          <%= f.input :message, :as => :text, :required => true, placeholder:t(:messagecus), :input_html => { :class => "form-control" }  %>
           <!-- <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea> -->
         </div>
       </div>
@@ -35,7 +35,7 @@
       <div id="success"></div>
       <div class="row">
         <div class="form-group col-xs-12">
-          <%= f.button :submit, 'Send message', :class=> "btn btn-success btn-lg" %>
+          <%= f.button :submit, t(:sendmessage) , :class=> "btn btn-success btn-lg" %>
         </div>
       </div>
       <% end %>
