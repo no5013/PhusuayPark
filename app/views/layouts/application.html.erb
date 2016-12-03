@@ -10,20 +10,40 @@
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      <%= link_to 'Phusuay Park View' , root_path, :class => "navbar-brand pbrand"%>
-      <div class='navbar-right'>
-        <%= link_to "EN", :locale=>'en'%>
-        |
-        <%= link_to "TH", :locale=>'th'%>
-        <%= link_to  t(:booknow) , book_path, :class => "btn btn-custom navbar-btn"%>
-        <p class="navbar-text"><%=t :tel %></p>
+      <!-- <%= link_to 'Phusuay Park View' , root_path, :class => "navbar-brand pbrand"%> -->
+
+      <a class="navbar-left" style="position: absolute;"href="/">
+        <%= image_tag 'phusuay/brand.jpg', class:"brand-img"%>
+      </a>
+
+      <div class="row">
+        <div class='navbar-right'>
+          <%= link_to "EN", :locale=>'en'%>
+          |
+          <%= link_to "TH", :locale=>'th'%>
+          <%= link_to  t(:booknow) , book_path, :class => "btn btn-custom navbar-btn"%>
+          <p class="navbar-text"><%=t :tel %></p>
+        </div>
       </div>
     </div>
+    <div class="row" style="background-color:#acd15d;">
+      <div class="container" style="padding-right:0;">
+        <ul class='nav nav-pills navbar-right pnav'>
+          <li><%= link_to t(:home) , root_path %></li>
+          <li><%= link_to t(:room) , rooms_path %></li>
+          <li><%= link_to t(:service) , services_path %></li>
+          <li><%= link_to t(:attraction) , activities_path %></li>
+          <li><%= link_to t(:about) , about_path %></li>
+          <li><%= link_to t(:contactus) , contact_path %></li>
+        </ul>
+      </div>
+    </div>
+
   </nav>
 
   <header>
     <div class='container'>
-      <ul class='nav nav-pills navbar-right pnav'>
+      <ul class='nav nav-pills navbar-right'>
         <li><%= link_to t(:home) , root_path %></li>
         <li><%= link_to t(:room) , rooms_path %></li>
         <li><%= link_to t(:service) , services_path %></li>
