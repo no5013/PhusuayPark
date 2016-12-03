@@ -1,59 +1,57 @@
 <div class='section'>
   <div class='container'>
-      <h2><%=t :servicePage %></h2>
-      <hr class="intro-divider">
-      <div class='col-xs-12'>
-        <div class='row'>
-          <div class="col-xs-4 center-block">
-            <div class="border-card">
-              <%= image_tag 'phusuay/pic7.jpg', :class => "border-card-img" %>
-              <div class="border-card-block">
-                <h4 class="border-card-title"><%=t :meetingRoomTopic %></h4>
-                <p class="border-card-text"><%=t :meetingRoom %></p>
-                <button type="button" class="btn btn-custom" data-toggle="modal" data-target=".service-modal-1"><%=t :seemore%></button>
-                <div class="modal fade service-modal-1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
-                  <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header-custom">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h3 class="modal-title-custom text-left"><%=t :meetingRoomTopic %></h3>
-                        <hr class="intro-divider">
-                      </div>
-                      <div class="modal-body-custom">
-                        <div class="col-xs-7">
-                          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                              <div class="item active">
-                                <%= image_tag 'phusuay/pic7.jpg' %>
-                              </div>
-                              <div class="item">
-                                <%= image_tag 'phusuay/pic7.jpg' %>
-                              </div>
-                              <div class="item">
-                                <%= image_tag 'phusuay/pic7.jpg' %>
-                              </div>
+    <h2><%=t :servicePage %></h2>
+    <hr class="intro-divider">
+    <div class='container'>
+        <div class="col-xs-6 col-md-4">
+          <div class="border-card">
+            <%= image_tag 'phusuay/pic7.jpg', :class => "border-card-img" %>
+            <div class="border-card-block">
+              <h4 class="border-card-title"><%=t :meetingRoomTopic %></h4>
+              <p class="border-card-text"><%=t :meetingRoom %></p>
+              <button type="button" class="btn btn-custom" data-toggle="modal" data-target=".service-modal-1"><%=t :seemore%></button>
+              <div class="modal fade service-modal-1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header-custom">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 class="modal-title-custom text-left"><%=t :meetingRoomTopic %></h3>
+                      <hr class="intro-divider">
+                    </div>
+                    <div class="modal-body-custom">
+                      <div class="col-xs-7">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                          </ol>
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <%= image_tag 'phusuay/pic7.jpg' %>
                             </div>
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
+                            <div class="item">
+                              <%= image_tag 'phusuay/pic7.jpg' %>
+                            </div>
+                            <div class="item">
+                              <%= image_tag 'phusuay/pic7.jpg' %>
+                            </div>
                           </div>
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
                         </div>
-                        <div class="col-xs-5">
-                          <%=t :meetingRoom %>
-                        </div>
+                      </div>
+                      <div class="col-xs-5">
+                        <%=t :meetingRoom %>
                       </div>
                     </div>
                   </div>
@@ -61,57 +59,57 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-xs-4">
-            <div class="border-card">
-              <%= image_tag 'phusuay/pic7.jpg', :class => "border-card-img" %>
-              <div class="border-card-block">
-                <h4 class="border-card-title"><%=t :diningRoomTopic %></h4>
-                <p class="border-card-text"><%=t :diningRoom%></p>
-                <button type="button" class="btn btn-custom" data-toggle="modal" data-target=".service-modal-2"><%=t :seemore%></button>
-                <div class="modal fade service-modal-2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
-                  <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header-custom">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h3 class="modal-title-custom text-left"><%=t :diningRoomTopic %></h3>
-                        <hr class="intro-divider">
-                      </div>
-                      <div class="modal-body-custom">
-                        <div class="col-xs-7">
-                          <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                              <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
-                              <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
-                              <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
-                            </ol>
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                              <div class="item active">
-                                <%= image_tag 'phusuay/pic7.jpg' %>
-                              </div>
-                              <div class="item">
-                                <%= image_tag 'phusuay/pic7.jpg' %>
-                              </div>
-                              <div class="item">
-                                <%= image_tag 'phusuay/pic7.jpg' %>
-                              </div>
+        <div class="col-xs-6 col-md-4 ">
+          <div class="border-card">
+            <%= image_tag 'phusuay/pic7.jpg', :class => "border-card-img" %>
+            <div class="border-card-block">
+              <h4 class="border-card-title"><%=t :diningRoomTopic %></h4>
+              <p class="border-card-text"><%=t :diningRoom%></p>
+              <button type="button" class="btn btn-custom" data-toggle="modal" data-target=".service-modal-2"><%=t :seemore%></button>
+              <div class="modal fade service-modal-2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header-custom">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 class="modal-title-custom text-left"><%=t :diningRoomTopic %></h3>
+                      <hr class="intro-divider">
+                    </div>
+                    <div class="modal-body-custom">
+                      <div class="col-xs-7">
+                        <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+                          </ol>
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <%= image_tag 'phusuay/pic7.jpg' %>
                             </div>
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
-                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
-                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
+                            <div class="item">
+                              <%= image_tag 'phusuay/pic7.jpg' %>
+                            </div>
+                            <div class="item">
+                              <%= image_tag 'phusuay/pic7.jpg' %>
+                            </div>
                           </div>
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
                         </div>
-                        <div class="col-xs-5">
-                          <%=t :diningRoom %>
-                        </div>
+                      </div>
+                      <div class="col-xs-5">
+                        <%=t :diningRoom %>
                       </div>
                     </div>
                   </div>
@@ -119,57 +117,57 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-xs-4">
-            <div class="border-card">
-              <%= image_tag 'phusuay/pic7.jpg', :class => "border-card-img" %>
-              <div class="border-card-block ">
-                <h4 class="border-card-title"><%=t :coffeeShopTopic %></h4>
-                <p class="border-card-text"><%=t :coffeeShop%></p><span class="border-card-end"></span>
-                <button type="button" class="btn btn-custom" data-toggle="modal" data-target=".service-modal-3"><%=t :seemore%></button>
-                <div class="modal fade service-modal-3" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
-                  <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header-custom">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h3 class="modal-title-custom text-left"><%=t :coffeeShopTopic %></h3>
-                        <hr class="intro-divider">
-                      </div>
-                      <div class="modal-body-custom">
-                        <div class="col-xs-7">
-                          <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                              <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
-                              <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
-                              <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
-                            </ol>
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                              <div class="item active">
-                                <%= image_tag 'phusuay/pic7.jpg' %>
-                              </div>
-                              <div class="item">
-                                <%= image_tag 'phusuay/pic7.jpg' %>
-                              </div>
-                              <div class="item">
-                                <%= image_tag 'phusuay/pic7.jpg' %>
-                              </div>
+        <div class="col-xs-6 col-md-4 ">
+          <div class="border-card">
+            <%= image_tag 'phusuay/pic7.jpg', :class => "border-card-img" %>
+            <div class="border-card-block ">
+              <h4 class="border-card-title"><%=t :coffeeShopTopic %></h4>
+              <p class="border-card-text"><%=t :coffeeShop%></p><span class="border-card-end"></span>
+              <button type="button" class="btn btn-custom" data-toggle="modal" data-target=".service-modal-3"><%=t :seemore%></button>
+              <div class="modal fade service-modal-3" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header-custom">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 class="modal-title-custom text-left"><%=t :coffeeShopTopic %></h3>
+                      <hr class="intro-divider">
+                    </div>
+                    <div class="modal-body-custom">
+                      <div class="col-xs-7">
+                        <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+                          </ol>
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <%= image_tag 'phusuay/pic7.jpg' %>
                             </div>
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
-                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
-                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
+                            <div class="item">
+                              <%= image_tag 'phusuay/pic7.jpg' %>
+                            </div>
+                            <div class="item">
+                              <%= image_tag 'phusuay/pic7.jpg' %>
+                            </div>
                           </div>
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
                         </div>
-                        <div class="col-xs-5">
-                          <%=t :coffeeShop %>
-                        </div>
+                      </div>
+                      <div class="col-xs-5">
+                        <%=t :coffeeShop %>
                       </div>
                     </div>
                   </div>
@@ -177,7 +175,7 @@
               </div>
             </div>
           </div>
-      </div>
+        </div>
     </div>
 
   </div>
@@ -188,27 +186,27 @@
     <h2><%=t :facilitiesPage %></h2>
     <hr class="intro-divider">
     <div class='container container-center'>
-        <div class='row'>
-          <div class="col-xs-3">
-            <%= image_tag 'wifi.png', :class => "icon-img" %>
-            <p><%=t :parking %></p>
-          </div>
+      <div class='row'>
+        <div class="col-xs-3">
+          <%= image_tag 'wifi.png', :class => "icon-img" %>
+          <p><%=t :parking %></p>
+        </div>
 
-          <div class="col-xs-3">
-            <%= image_tag 'wifi.png', :class => "icon-img" %>
-            <p><%=t :internet %></p>
-          </div>
+        <div class="col-xs-3">
+          <%= image_tag 'wifi.png', :class => "icon-img" %>
+          <p><%=t :internet %></p>
+        </div>
 
-          <div class="col-xs-3">
-            <%= image_tag 'wifi.png', :class => "icon-img" %>
-            <p><%=t :roomService %></p>
-          </div>
+        <div class="col-xs-3">
+          <%= image_tag 'wifi.png', :class => "icon-img" %>
+          <p><%=t :roomService %></p>
+        </div>
 
-          <div class="col-xs-3">
-            <%= image_tag 'wifi.png', :class => "icon-img" %>
-            <p><%=t :launder %></p>
-          </div>
+        <div class="col-xs-3">
+          <%= image_tag 'wifi.png', :class => "icon-img" %>
+          <p><%=t :launder %></p>
         </div>
       </div>
     </div>
+  </div>
 </div>
