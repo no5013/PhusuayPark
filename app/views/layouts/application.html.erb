@@ -12,8 +12,8 @@
     <div class="container">
       <!-- <%= link_to 'Phusuay Park View' , root_path, :class => "navbar-brand pbrand"%> -->
 
-      <a class="navbar-left" style="position: absolute;"href="/">
-        <%= image_tag 'phusuay/brand.png', class:"brand-img"%>
+      <a class="navbar-brand pbrand" style="position: absolute;"href="/">
+        Phusuay Park View
       </a>
 
       <div class="row">
@@ -57,6 +57,7 @@
 
   <%= yield %>
   <div class="footer">
+    <%= image_tag 'phusuay/brand.png', class:"brand-footer-img navbar-left"%>
     <p><%=t :locationName %></p>
     <p><%=t :locationAddr %></p>
     <p><%=t :tel %></p>
