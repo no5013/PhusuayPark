@@ -20,15 +20,23 @@ header {
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   text-align: center;
   color: #f8f8f8;
-  height: 300px;
-
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(<%= asset_path("phusuay/banner.jpg") %>);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 450px;
+  width: 100%;
+  background: url(<%= asset_path("phusuay/pic28.jpg") %>);
+  background-position: top;
   overflow: hidden;
 }
+
+@media screen and (min-width: 1024px) {
+  header{
+    height: 85%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 
 .intro-message {
   position: relative;
@@ -118,7 +126,7 @@ section.book-now {
   padding-top: 15%;
   padding-bottom: 15%;
 
-  background-image: url(<%= asset_path("card.jpg") %>);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(<%= asset_path("phusuay/pic27.jpg") %>);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -338,12 +346,6 @@ section#service-price p{
   background-color:rgba(0, 0, 0, 0.5);
   height: 80%;
   position: relative;
-}
-
-@media screen and (min-width: 1024px) {
-  header{
-    height: 80%;
-  }
 }
 
 .see-more{
