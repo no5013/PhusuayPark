@@ -3,23 +3,29 @@
 <%= form_for(@book) do |f| %>
 <div class='section'>
   <div class='container'>
-    <h2>Booking</h2>
+    <h1><%=t :bookingpage %></h1>
     <hr class="intro-divider">
     <div class='container'>
 
       <% if flash[:error] %>
       <div class="alert alert-danger"><%= flash[:error] %></div>
       <% end %>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-center"><strong><%=t :selectindate%></strong></h3>
+          <div class="input-group date col-md-offset-4 col-md-4 col-xs-12" >
+            <%= f.text_field :checkin_date, {:class => 'form-control',:id => 'checkInpicker', :required => true}%>
+            <span class="input-group-addon span-btn" id="checkInBtn"><i class="glyphicon glyphicon-calendar"></i></span>
+          </div>
+        </div>
+        <div class="col-md-6">
 
-      <p class="text-center">Select Check in Dates</p>
-      <div class="input-group date col-md-offset-4 col-md-4 col-xs-12" >
-        <%= f.text_field :checkin_date, {:class => 'form-control',:id => 'checkInpicker', :required => true}%>
-        <span class="input-group-addon span-btn" id="checkInBtn"><i class="glyphicon glyphicon-calendar"></i></span>
-      </div>
-      <p class="text-center">Select Check out Dates</p>
-      <div class="input-group date col-md-offset-4 col-md-4 col-xs-12" >
-        <%= f.text_field :checkout_date, {:class => 'form-control', :id => 'checkOutpicker', :required => true}%>
-        <span class="input-group-addon span-btn" id="checkOutBtn"><i class="glyphicon glyphicon-calendar" id="checkOutBtn"></i></span>
+          <h3 class="text-center"><strong><%=t :selectoutdate%></strong></h3>
+          <div class="input-group date col-md-offset-4 col-md-4 col-xs-12" >
+            <%= f.text_field :checkout_date, {:class => 'form-control', :id => 'checkOutpicker', :required => true}%>
+            <span class="input-group-addon span-btn" id="checkOutBtn"><i class="glyphicon glyphicon-calendar" id="checkOutBtn"></i></span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -27,7 +33,7 @@
 
 <section class='section'>
   <div class='container'>
-    <p>Select Your Rooms</p>
+    <h3><strong><%=t :selectroom%></strong></h3>
     <div class='row'>
 
       <div class="col-xs-4">
@@ -137,41 +143,37 @@
 
 <section class='book-contact section'>
   <div class="container">
-    <p>Your Contact</p>
+    <h3><strong><%=t :bookcontact %></strong></h3>
     <div class="col-lg-8 col-lg-offset-2">
       <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
       <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
       <div name="sentMessage" id="contactForm">
         <div class="row control-group">
           <div class="form-group col-xs-12 floating-label-form-group controls">
-            <label>Name</label>
-            <%= f.text_field :contact_name, :required => true, :placeholder => "Name" ,:class => "form-control" %>
-            <p class="help-block text-danger"></p>
+            <%= f.text_field :contact_name, :required => true, :placeholder => t(:namecus) ,:class => "form-control book-input" %>
+            <h3 class="help-block text-danger"></h3>
           </div>
         </div>
         <div class="row control-group">
           <div class="form-group col-xs-12 floating-label-form-group controls">
-            <label>Email Address</label>
-            <%= f.text_field :contact_email, :required => true, :placeholder => "Email" ,:class => "form-control" %>
+            <%= f.text_field :contact_email, :required => true, :placeholder => t(:emailcus) ,:class => "form-control book-input" %>
           </div>
         </div>
 
         <div class="row control-group">
           <div class="form-group col-xs-12 floating-label-form-group controls">
-            <label>Phone Number</label>
-            <%= f.text_field :contact_phone, :required => true, :placeholder => "Phone Number" ,:class => "form-control" %>
+            <%= f.text_field :contact_phone, :required => true, :placeholder => t(:phonecus) ,:class => "form-control book-input" %>
           </div>
         </div>
         <div class="row control-group">
           <div class="form-group col-xs-12 floating-label-form-group controls">
-            <label>Message</label>
-            <%= f.text_area :contact_message, :placeholder => "Other detail", :rows => 5, :class => "form-control"   %>
+            <%= f.text_area :contact_message, :placeholder => t(:messagecus), :rows => 5, :class => "form-control book-input"   %>
           </div>
         </div>
         <br>
         <div class="row">
           <div class="form-group col-xs-12">
-            <%= f.submit "BOOK" ,:class =>"btn btn-custom btn-lg" %>
+            <%= f.submit t(:book) ,:class =>"btn btn-custom btn-lg" %>
           </div>
         </div>
       </div>

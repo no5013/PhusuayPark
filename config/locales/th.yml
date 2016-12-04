@@ -93,3 +93,10 @@ th:
   emailcus: "อีเมล"
   phonecus: "เบอร์โทรศัพท์"
   messagecus: "ข้อความ"
+
+  #booking
+  bookingpage: "จองห้อง"
+  selectindate: "เช็คอิน"
+  selectoutdate: "เช็คเอาท์"
+  selectroom: "เลือกห้องพัก"
+  bookcontact: "ข้อมูลลูกค้า"

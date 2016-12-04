@@ -28,17 +28,22 @@
   <div id="map" style="width:100%;min-height:350px"></div>
 
   <script>
-  function myMap() {
-    var mapCanvas = document.getElementById("map");
-    var mapOptions = {
-      center: new google.maps.LatLng(51.5, -0.2),
-      zoom: 10
-    }
-    var map = new google.maps.Map(mapCanvas, mapOptions);
+  var map;
+  function initMap() {
+    var phusuay = {lat: 15.8409757, lng: 102.0612368};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: phusuay,
+      scrollwheel: false,
+    });
+    var marker = new google.maps.Marker({
+      position: phusuay,
+      map: map
+    });
   }
   </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyB2JUusumTBOvHtrnWzs2i8yWnDTAvda6g "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyB2JUusumTBOvHtrnWzs2i8yWnDTAvda6g "></script>
 </section>
 
 <section class="contact-us">
