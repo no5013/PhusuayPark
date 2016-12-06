@@ -86,6 +86,8 @@ th:
   tel: "โทรศัพท์ : 044-854-111"
   reservation: "สำรองห้อง : 025527435"
   email: "อีเมล : phusuay@gmail.com"
+  fax: "แฟ็กซ์"
+  mobilephone: "มือถือ"
 
   #contactus
   contactpage: "ติดต่อเรา"
