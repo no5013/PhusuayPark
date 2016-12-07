@@ -31,7 +31,7 @@
         <div class="card-block">
           <h2 class="card-title"><%=t :roompage %></h2>
           <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <a href="#" class="btn btn-custom"><%=t :seemore %></a>
+          <%= link_to  t(:seemore) , rooms_path, :class => "btn btn-custom"%>
         </div>
       </div>
 
@@ -40,7 +40,7 @@
         <div class="card-block">
           <h2 class="card-title"><%=t :serviceAndFacilities %></h2>
           <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <a href="#" class="btn btn-custom"><%=t :seemore %></a>
+          <%= link_to  t(:seemore) , services_path, :class => "btn btn-custom"%>
         </div>
       </div>
 
@@ -49,7 +49,7 @@
         <div class="card-block">
           <h2 class="card-title"><%=t :attractionPage%></h2>
           <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <a href="#" class="btn btn-custom"><%=t :seemore %></a>
+          <%= link_to  t(:seemore) , activities_path, :class => "btn btn-custom"%>
         </div>
       </div>
     </div>
@@ -60,7 +60,7 @@
   <div class="container">
     <p class='book-now-message'><%=t :booknow %></p>
     <!-- <p class='book-now-submessage'>Get a special offer up to 70%</p> -->
-    <button type="button" class="btn btn-custom"><%=t :booknow %></button>
+    <%= link_to  t(:booknow) , book_path, :class => "btn btn-custom"%>
   </div>
 </section>
 
