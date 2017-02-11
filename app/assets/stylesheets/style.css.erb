@@ -17,6 +17,7 @@ li{
   font-size: 16px;
 }
 header {
+  position: relative;
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   text-align: center;
   color: #f8f8f8;
@@ -29,7 +30,7 @@ header {
 
 @media screen and (min-width: 1024px) {
   header{
-    height: 85%;
+    height: 70%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -352,8 +353,10 @@ section#service-price p{
 
 .promotion{
   background-color:rgba(0, 0, 0, 0.5);
-  height: 80%;
-  position: relative;
+  position: absolute;
+  top: 55%;
+  height: 70%;
+  transform: translateY(-50%);
 }
 
 .see-more{
