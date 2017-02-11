@@ -50,17 +50,21 @@
   </nav>
 
   <header>
-    <div class='container'>
-      <ul class='nav nav-pills navbar-right'>
-        <li><%= link_to t(:home) , root_path %></li>
-        <li><%= link_to t(:room) , rooms_path %></li>
-        <li><%= link_to t(:service) , services_path %></li>
-        <li><%= link_to t(:attraction) , activities_path %></li>
-        <li><%= link_to t(:about) , about_path %></li>
-        <li><%= link_to t(:contactus) , contact_path %></li>
-      </ul>
-    </div>
 
+    <% if @showed_promotions.size != 0 then %>
+    <div class="col-md-3 col-md-offset-1 col-xs-5 col-xs-offset-1 promotion ">
+      <h2><strong>Promotions</strong></h2>
+      <table style="width:100%">
+        <%@showed_promotions.each do |promotion|%>
+        <tr>
+          <th class="col-md-6 text-center"><%= link_to promotion.title, promotion_path(promotion), :id => "promotion-link" %></th>
+          <th class="col-md-6 text-center"><%= promotion.created_at.strftime("%Y-%m-%d") %></th>
+        </tr>
+        <%end%>
+      </table>
+      <%= link_to 'See more' , promotions_path, :id => "see-more-btn", :class => "btn btn-primary"%>
+    </div>
+    <%end%>
   </header>
 
   <%= yield %>
