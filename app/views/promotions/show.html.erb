@@ -9,5 +9,5 @@
 </p>
 
 <p class="body">
-  <%= @promotion.body %>
+  <%= raw Markdown.new(@promotion.body).to_html %>
 </p>
