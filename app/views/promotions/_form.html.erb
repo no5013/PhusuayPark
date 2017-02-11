@@ -17,15 +17,17 @@
     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
     <div name="promotion" id="contactForm">
 
-      <div class="row control-group">
+      <div class="row control-group" style="margin-bottom: 50px">
         <div class="form-group col-xs-12 floating-label-form-group controls">
           <%= f.text_field :title, :required => true, :placeholder => "Title" ,:class => "form-control" %>
         </div>
       </div>
 
-      <div class="row control-group">
-        <div class="form-group col-xs-12 floating-label-form-group controls">
-          <%= f.text_area :body, :placeholder => "Body", :rows => 5, :class => "form-control"   %>
+      <div class="row control-group"  style="margin-top: 50px">
+        <div class="form-group col-xs-12  controls">
+					<%= md_simple_editor  do %>
+          <%= f.text_area :body, :placeholder => "Content", :rows => 10, :class => "form-control"   %>
+					<% end %>
         </div>
       </div>
 
