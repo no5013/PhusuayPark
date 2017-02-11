@@ -51,11 +51,11 @@
 
   <header>
 
-    <% if @promotions.size != 0 then %>
+    <% if @showed_promotions.size != 0 then %>
     <div class="col-md-3 col-md-offset-1 col-xs-5 col-xs-offset-1 promotion ">
       <h2><strong>Promotions</strong></h2>
       <table style="width:100%">
-        <%@promotions.each do |promotion|%>
+        <%@showed_promotions.each do |promotion|%>
         <tr>
           <th class="col-md-6 text-center"><%= link_to promotion.title, promotion_path(promotion), :id => "promotion-link" %></th>
           <th class="col-md-6 text-center"><%= promotion.created_at.strftime("%Y-%m-%d") %></th>
