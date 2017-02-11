@@ -55,3 +55,4 @@ group :development, :test do
   gem 'foreman'
 end
 gem 'devise'
+gem 'redcarpet'

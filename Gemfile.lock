@@ -122,6 +122,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (11.3.0)
     rdoc (4.3.0)
+    redcarpet (3.4.0)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     sass (3.4.22)
@@ -176,6 +177,7 @@ DEPENDENCIES
   jquery-rails
   mail_form
   rails (= 4.2.5.1)
+  redcarpet
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form
@@ -183,6 +185,3 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
-
-BUNDLED WITH
-   1.12.3
