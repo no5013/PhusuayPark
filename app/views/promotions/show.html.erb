@@ -1,13 +1,17 @@
-<h1 class="title">
-  <%= @promotion.title %>
-</h1>
 
-<p class="date">
-  Submitted <%= time_ago_in_words(@promotion.created_at) %> Ago
-  | <%= link_to 'Edit', edit_promotion_path(@promotion) %>
-  | <%= link_to 'Delete', promotion_path(@promotion), method: :delete, data: {confirm: 'Are you '} %>
-</p>
+<div class="container">
+  <h1 class="text-left"><%= @promotion.title %></h1>
 
-<p class="body">
-  <%= raw Markdown.new(@promotion.body).to_html %>
-</p>
+  <p class="date">
+    Submitted <%= time_ago_in_words(@promotion.created_at) %> Ago
+    | <%= link_to 'Edit', edit_promotion_path(@promotion) %>
+    | <%= link_to 'Delete', promotion_path(@promotion), method: :delete, data: {confirm: 'Are you '} %>
+  </p>
+  <hr class="intro-divider">
+
+
+  <p class="body">
+    <%= raw Markdown.new(@promotion.body).to_html %>
+  </p>
+
+</div>
