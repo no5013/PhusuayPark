@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'services', :to => 'page_controller#services', as: 'services'
   get 'activities', :to => 'page_controller#activities', as: 'activities'
   get 'about', :to => 'page_controller#about' , as: 'about'
+  get 'admin', :to => 'page_controller#admin' , as: 'admin'
 
   match '/contact',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]

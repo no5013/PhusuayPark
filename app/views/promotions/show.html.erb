@@ -4,8 +4,10 @@
 
   <p class="date">
     Submitted <%= time_ago_in_words(@promotion.created_at) %> Ago
+    <% if user_signed_in? %>
     | <%= link_to 'Edit', edit_promotion_path(@promotion) %>
-    | <%= link_to 'Delete', promotion_path(@promotion), method: :delete, data: {confirm: 'Are you '} %>
+    | <%= link_to 'Delete', promotion_path(@promotion), method: :delete, data: {confirm: 'Are you sure'} %>
+    <% end %>
   </p>
   <hr class="intro-divider">
 

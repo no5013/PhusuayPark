@@ -1,0 +1,7 @@
+<div class="container">
+  <% if user_signed_in? %>
+  <%= link_to "SIGN OUT", destroy_user_session_path,  :method => :delete, :class => "btn btn-custom center-block", :style => "margin: 10% 0; padding: 5% 0"%>
+  <% else %>
+  <%= link_to "SIGN IN", new_user_session_path,  :method => :get %>
+  <% end %>
+</div>
