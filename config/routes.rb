@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { registrations: "registrations"}
+
   get 'page_controller/home'
 
   get 'page_controller/rooms'
@@ -20,6 +21,7 @@ Rails.application.routes.draw do
   get 'services', :to => 'page_controller#services', as: 'services'
   get 'activities', :to => 'page_controller#activities', as: 'activities'
   get 'about', :to => 'page_controller#about' , as: 'about'
+  get 'admin', :to => 'page_controller#admin' , as: 'admin'
 
   match '/contact',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
@@ -27,8 +29,8 @@ Rails.application.routes.draw do
   match '/book',     to: 'books#new',             via: 'get'
   resources "books", only: [:new, :create]
 
-  # match '/promotions',     to: 'promotions#index',             via: 'get'
-  # resources "promotions"
+  match '/promotions',     to: 'promotions#index',             via: 'get'
+  resources "promotions"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
   end
 
   def get_promotions
-    @promotions = Promotion.all
+    @showed_promotions = Promotion.order(created_at: :desc).limit(10)
   end
 end

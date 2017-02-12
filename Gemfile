@@ -55,3 +55,6 @@ group :development, :test do
   gem 'foreman'
 end
 gem 'devise'
+gem 'redcarpet'
+gem "font-awesome-rails"
+gem 'md_simple_editor'

@@ -1,6 +1,19 @@
-<% @promotions.each do |promotion| %>
+
+<div class="container">
+	<h1 style="display: inline-block">All Promotions</h1>
+	<% if user_signed_in? %>
+	<%= link_to 'New Promotion', new_promotion_path, :class => "btn btn-custom", :id => "new-promotion-btn"%>
+	<% end %>
+	<hr class="intro-divider">
+	<% @promotions.each do |promotion| %>
 	<div class="post_wrapper">
 		<h2 class="title"><%= link_to promotion.title, promotion %></h2>
-		<p class="date"><%= promotion.created_at.strftime("%B %d, %Y") %></p>
+		<p class="date"><%= promotion.created_at.strftime("%B %d, %Y") %>
+			<% if user_signed_in? %>
+			| <%= link_to 'Edit', edit_promotion_path(promotion) %>
+			| <%= link_to 'Delete', promotion_path(promotion), method: :delete, data: {confirm: 'Are you '} %>
+			<% end %>
+		</p>
 	</div>
-<% end %>
+	<% end %>
+</div>
